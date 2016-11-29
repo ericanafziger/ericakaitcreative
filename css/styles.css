@@ -8,6 +8,7 @@ body {
   background-color: black;
   color: white;
   overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
 }
 #container {
   position: relative;
@@ -16,7 +17,7 @@ body {
   right:0;
   bottom:0;
   left:0;
-  border: dotted yellow 1px;
+  border: dotted yellow 2px;
   width:100%;
   height: 100%;
   margin: 0 auto;
@@ -52,18 +53,24 @@ body {
   opacity: 0.4;
 }
 #images img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
-  min-height: 700px;
   width: 100%;
   display: block;
   object-fit: cover;
 }
 #large-letter {
   position: absolute;
-  font-size: 18em;
+  white-space: nowrap;
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 20em;
   opacity: 0.2;
-  top: 50%;
-  left: 50%;
+  top: 55%;
+  left: 45%;
   transform: translate(-50%,-50%);
 }
 #text {
@@ -72,4 +79,40 @@ body {
   left: 50%;
   z-index: 2;
   transform: translate(-50%,-50%);
+}
+#arrows {
+  position: relative;
+  top: 50%;
+}
+#arrows i {
+  position: absolute;
+  opacity: 0.5;
+  transition: opacity 1s;
+  margin-right: 2%;
+  z-index: 2;
+  margin-left: 2%;
+}
+#arrows i:last-child {
+  right: 0%;
+}
+#arrows i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#circles {
+  position: absolute;
+  top: 90%;
+  font-size: 0.8em;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%,0);
+}
+#circles i:hover {
+  cursor: pointer;
+}
+#images .active {
+  display: block;
+}
+#images img {
+  display: none;
 }
