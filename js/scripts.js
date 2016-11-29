@@ -1,34 +1,38 @@
 $(document).ready(function(){
   var totalImages = $("#images").children().length; // number of total slideshow images
   var imageCounter = $("#images").children().length; // keeps track of current image
-  var startofImages = 1;
   $("#arrows .fa-angle-left").click(function(){
-    var photo = parseInt($("#images .active").attr('class')); // grabs active photo
+    var photoNumber = parseInt($("#images .active").attr('class')); // grabs active photo
+    $("#circles i").removeClass("fa-circle");
     $("#images img").removeClass("active");
-    if (photo===1) {
+    if (photoNumber===1) {
       imageCounter = $("#images").children().length;
       $("#images img:nth-child("+imageCounter+")").addClass("active");
     } else {
       imageCounter -= 1;
-      startofImages = imageCounter;
       $("#images img:nth-child("+imageCounter+")").addClass("active");
     }
+    $("#circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+
     // alert("image counter is equal to " +imageCounter);
 
   });
   $("#arrows .fa-angle-right").click(function(){
-    var photo = parseInt($("#images .active").attr('class')); // grabs active photo
+    var photoNumber = parseInt($("#images .active").attr('class')); // grabs active photo
+    $("#circles i").removeClass("fa-circle");
     $("#images img").removeClass("active");
-    if (photo < imageCounter) {
-      imageCounter = photo + 1;
+    if (photoNumber < imageCounter) {
+      imageCounter = photoNumber + 1;
       $("#images img:nth-child("+imageCounter+")").addClass("active");
-    } else if (photo === totalImages) {
+    } else if (photoNumber === totalImages) {
       imageCounter = 1;
       $("#images img:nth-child("+imageCounter+")").addClass("active");
     } else {
       imageCounter += 1;
       $("#images img:nth-child("+imageCounter+")").addClass("active");
     }
+    $("#circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+
     // alert("image counter is equal to " +imageCounter);
 
   });
