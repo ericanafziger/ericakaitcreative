@@ -17,12 +17,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0; }
+  height: 100vh; }
 
 .images {
-  opacity: 0.7; }
+  opacity: 0.8; }
   .images img {
     position: absolute;
     top: 0;
