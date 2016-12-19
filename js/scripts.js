@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+  $(".more").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".section-two").offset().top
+      }, 2000);
+  });
+
+
+
+
+// ================Slideshow Functionality ================//
+
   var totalImages = $(".images").children().length; // number of total slideshow images
   var imageCounter = $(".images").children().length; // keeps track of current image
   $(".arrows .fa-angle-left").click(function(){
