@@ -3,7 +3,7 @@ $(document).ready(function(){
   $(".more").click(function() {
       $('html, body').animate({
           scrollTop: $(".section-two").offset().top
-      }, 2000);
+      }, 1500);
   });
 
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 // ================Slideshow Functionality ================//
 
-  var totalImages = $(".images").children().length; // number of total slideshow images
+  var totalImages = $(".images").children().length; // # of total slideshow images
   var imageCounter = $(".images").children().length; // keeps track of current image
   $(".arrows .fa-angle-left").click(function(){
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
@@ -29,7 +29,6 @@ $(document).ready(function(){
 
   $(".arrows .fa-angle-right").click(function(){
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
-    // debugger;
     $(".circles i").removeClass("fa-circle");
     $(".images img").removeClass("active");
     if (photoNumber < totalImages) {
