@@ -51,6 +51,9 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh; }
+  @media screen and (max-width: 740px) {
+    .container {
+      height: 50vh; } }
 
 .images {
   opacity: 0.8; }
@@ -68,6 +71,13 @@ body {
     opacity: 0; }
   .images .active {
     opacity: 1; }
+
+.text-contain {
+  position: relative;
+  max-width: 1400px;
+  height: 400px;
+  margin: 0 auto;
+  top: 45%; }
 
 .hero-text {
   display: flex;
@@ -180,6 +190,9 @@ body {
         margin-bottom: 1%;
         width: 49.45%;
         height: 300px; } }
+    @media screen and (max-width: 740px) {
+      .module-container .module {
+        width: 100%; } }
     @media screen and (max-width: 950px) {
       .module-container .module:last-child {
         width: 100%; } }
@@ -192,6 +205,10 @@ body {
     position: relative;
     height: 240px;
     width: 49.45%; }
+    @media screen and (max-width: 740px) {
+      .module-container .module-large {
+        width: 100%;
+        margin-bottom: 1%; } }
     .module-container .module-large img {
       max-width: 100%;
       width: 100%;
@@ -214,7 +231,7 @@ body {
       color: #555; }
       .module-container .module-large .module-text:hover {
         cursor: pointer;
-        border: 1px solid rgba(130, 130, 130, 0.4);
+        border: 2px solid rgba(130, 130, 130, 0.4);
         border-radius: 5px; }
 
 .line {
@@ -238,13 +255,26 @@ body {
   top: 140%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 740px) {
+    .hidden-module-text {
+      width: 50%;
+      height: 50%;
+      top: 50%;
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px solid white; } }
   .hidden-module-text i {
     position: absolute;
     transform: rotate(0deg);
     transition: all ease-in-out 600ms;
     top: -60px; }
+    @media screen and (max-width: 740px) {
+      .hidden-module-text i {
+        display: none; } }
   .hidden-module-text h5 {
     font-weight: normal; }
+    @media screen and (max-width: 740px) {
+      .hidden-module-text h5 {
+        color: #555; } }
   .hidden-module-text a {
     transition: color ease-in-out 200ms; }
   .hidden-module-text a:hover {
@@ -271,7 +301,13 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 100px auto; }
+  margin: 150px auto; }
+  @media screen and (max-width: 950px) {
+    .top {
+      margin: 80px auto; } }
+  @media screen and (max-width: 740px) {
+    .top {
+      margin: 40px auto; } }
   .top:hover {
     cursor: pointer;
     transform: scale(1.2); }

@@ -21,7 +21,13 @@
 }
 
 //=================Hero Text Styling===================//
-
+.text-contain {
+  position: relative;
+  max-width: 1400px;
+  height: 400px;
+  margin: 0 auto;
+  top: 45%;
+}
 .hero-text {
   display: flex;
   flex-direction: column;

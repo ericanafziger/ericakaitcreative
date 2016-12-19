@@ -10,7 +10,7 @@
   position: relative;
   height: 35%;
   width: 80%;
-  max-width: 1100px;
+  max-width: $max-width;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,9 @@
       width: 49.45%;
       height: 300px;
     }
+    @media screen and #{$md-break} {
+      width: 100%;
+    }
     &:last-child {
       @media screen and #{$lg-break} {
         width: 100%;
@@ -52,6 +55,10 @@
     position: relative;
     height: 240px;
     width: 49.45%;
+    @media screen and #{$md-break} {
+      width: 100%;
+      margin-bottom: 1%;
+    }
     img {
       max-width: 100%;
       width: 100%;
@@ -75,7 +82,7 @@
       color: $grey;
       &:hover {
         cursor: pointer;
-        border: 1px solid $t-grey;
+        border: 2px solid $t-grey;
         border-radius: 5px;
       }
     }
@@ -103,14 +110,27 @@
   top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and #{$md-break} {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    background: $t-white-2;
+    border: 2px solid white;
+  }
   i {
     position: absolute;
     transform: rotate(0deg);
     transition: all ease-in-out 600ms;
     top: -60px;
+    @media screen and #{$md-break} {
+      display: none;
+    }
   }
   h5 {
     font-weight: normal;
+    @media screen and #{$md-break} {
+      color: $grey;
+    }
   }
   a {
     transition: color ease-in-out 200ms;
@@ -142,7 +162,13 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 100px auto;
+  margin: 150px auto;
+  @media screen and #{$lg-break} {
+    margin: 80px auto;
+  }
+  @media screen and #{$md-break} {
+    margin: 40px auto;
+  }
   &:hover {
     cursor: pointer;
     transform:scale(1.2);
