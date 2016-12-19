@@ -136,7 +136,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 3;
-  background: #b8b7b1; }
+  background: #dadad7; }
 
 .module-container {
   margin-left: auto;
@@ -258,5 +258,29 @@ body {
   position: fixed;
   z-index: 4;
   top: 63px; }
+
+.footer {
+  height: 160px;
+  width: 100%;
+  background: white;
+  position: relative;
+  z-index: 5;
+  bottom: -280px;
+  color: #555;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer .item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px; }
+  .footer .footer-item {
+    width: 30%;
+    text-align: center;
+    border-left: 1px solid rgba(130, 130, 130, 0.4); }
+    .footer .footer-item:nth-child(1) {
+      border: none; }
 
 /*# sourceMappingURL=applications.css.map */

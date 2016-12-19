@@ -1,0 +1,27 @@
+.footer {
+  height: 160px;
+  width: 100%;
+  background: $white;
+  position: relative;
+  z-index: 5;
+  bottom: -280px;
+  color: $grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+  }
+  .footer-item {
+    width: 30%;
+    text-align: center;
+    border-left: 1px solid $t-grey;
+    &:nth-child(1) {
+      border: none;
+    }
+  }
+}
