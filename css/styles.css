@@ -8,7 +8,7 @@ body {
   background-color: black;
   color: white;
   overflow: hidden;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 #container {
   position: relative;
@@ -22,6 +22,9 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
+}
+#bars, #phone {
+  display: none;
 }
 #nav {
   position: relative;
@@ -77,8 +80,14 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  letter-spacing: 0.1em;
   z-index: 2;
   transform: translate(-50%,-50%);
+}
+#text h1 {
+  font-weight: 300;
+  white-space: nowrap;
+
 }
 #arrows {
   position: relative;
@@ -115,4 +124,33 @@ body {
 }
 #images img {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  #nav {
+    left: 50%;
+    font-size: 0.8em;
+    transform: translate(-50%,0);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #nav {
+    text-align: left;
+    }
+  #nav ul{
+    display: none;
+  }
+  #bars {
+    display: block;
+    margin-top: 5%;
+  }
+  #bars:hover {
+    cursor: pointer;
+  }
+  #bars:target + #phone {
+    display: block;
+  }
+  a {
+    color: white;
+  }
 }
