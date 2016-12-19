@@ -19,20 +19,6 @@
   }
 }
 
-//=================Hero Circles Styling===================//
-
-.circles {
-  position: absolute;
-  top: 90%;
-  font-size: 0.8em;
-  left: 50%;
-  z-index: 3;
-  transform: translate(-50%,0);
-  i:hover {
-    cursor: pointer;
-  }
-}
-
 //=================Hero Text Styling===================//
 
 .hero-text {
@@ -68,7 +54,7 @@
   i {
     margin: 0 5px;
     padding: 20px;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 1s;
     z-index: 2;
     &:hover {
@@ -81,4 +67,24 @@
   position: absolute;
   top: 0;
   color: $white;
+}
+
+//=================Hero Circles Styling===================//
+
+.circles {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  right: -35px;
+  color: $t-white-2;
+  font-size: 0.8em;
+  z-index: 3;
+  transform: translate(-50%,0);
+  i {
+    margin: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
