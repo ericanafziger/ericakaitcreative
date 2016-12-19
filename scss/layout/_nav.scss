@@ -1,0 +1,37 @@
+.nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $t-white;
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  ul {
+    width: 80%;
+    color: $grey;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    li {
+      padding: 5px 40px;
+      align-self: center;
+      border-right: 1px solid $t-grey;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.bottom-border {
+  height: 1px;
+  width: 100%;
+  background: $t-white;
+  position: fixed;
+  z-index: 2;
+  top: 63px;
+}

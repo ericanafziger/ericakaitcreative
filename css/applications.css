@@ -12,13 +12,12 @@ body {
 
 .container {
   position: relative;
-  position: fixed !important;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   padding: 0; }
 
@@ -38,22 +37,6 @@ body {
   .images .active {
     display: block; }
 
-.arrows {
-  position: relative;
-  top: 50%; }
-  .arrows i {
-    position: absolute;
-    opacity: 0.5;
-    transition: opacity 1s;
-    margin-right: 2%;
-    z-index: 2;
-    margin-left: 2%; }
-    .arrows i:last-child {
-      right: 0%; }
-    .arrows i:hover {
-      opacity: 1;
-      cursor: pointer; }
-
 .circles {
   position: absolute;
   top: 90%;
@@ -63,5 +46,81 @@ body {
   transform: translate(-50%, 0); }
   .circles i:hover {
     cursor: pointer; }
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 400px;
+  position: absolute;
+  bottom: 35%;
+  right: 100px; }
+  .hero-text img {
+    width: 400px;
+    margin-bottom: 10px; }
+  .hero-text .secondary-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.85);
+    color: #444;
+    height: 35px;
+    width: 220px; }
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  top: 115px; }
+  .arrows i {
+    margin: 0 5px;
+    padding: 20px;
+    opacity: 0.5;
+    transition: opacity 1s;
+    z-index: 2; }
+    .arrows i:hover {
+      opacity: 1;
+      cursor: pointer; }
+
+.fa-angle-right:before, .fa-angle-left:before {
+  position: absolute;
+  top: 0;
+  color: white; }
+
+.nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  height: 60px;
+  z-index: 2;
+  position: fixed;
+  width: 100%; }
+  .nav-main ul {
+    width: 80%;
+    color: #444;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+    .nav-main ul li {
+      padding: 5px 40px;
+      align-self: center;
+      border-right: 1px solid rgba(130, 130, 130, 0.4); }
+      .nav-main ul li:hover {
+        cursor: pointer; }
+
+.bottom-border {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  z-index: 2;
+  top: 63px; }
 
 /*# sourceMappingURL=applications.css.map */
