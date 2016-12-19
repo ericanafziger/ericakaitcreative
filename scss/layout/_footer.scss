@@ -3,8 +3,8 @@
   width: 100%;
   background: $white;
   position: relative;
-  z-index: 5;
-  bottom: -280px;
+  z-index: -1;
+  bottom: 0;
   color: $grey;
   display: flex;
   justify-content: space-around;

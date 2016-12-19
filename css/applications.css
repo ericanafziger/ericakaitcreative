@@ -39,11 +39,11 @@ body {
   background-color: black;
   color: white;
   overflow: auto;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden; }
 
 .container {
-  overflow-x: hidden;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   right: 0;
@@ -64,9 +64,10 @@ body {
     width: 100%;
     display: block;
     object-fit: cover;
-    display: none; }
+    transition: opacity ease-in-out 2s;
+    opacity: 0; }
   .images .active {
-    display: block; }
+    opacity: 1; }
 
 .hero-text {
   display: flex;
@@ -144,17 +145,14 @@ body {
     transform: translate(-50%, 0) scale(1.2); }
 
 .section-two {
-  top: 100vh;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  position: relative;
   z-index: 3;
   background: #dadad7; }
 
 .module-container {
   margin-left: auto;
   margin-right: auto;
-  top: 150px;
   position: relative;
   height: 35%;
   width: 80%;
@@ -163,13 +161,28 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
+  .module-container:first-of-type {
+    padding-top: 170px;
+    margin-bottom: 40px; }
+    @media screen and (max-width: 950px) {
+      .module-container:first-of-type {
+        padding-top: 80px; } }
   .module-container:nth-child(2) {
-    height: 25%; }
+    height: 25%;
+    margin-bottom: 50px; }
   .module-container .module {
     overflow: hidden;
     position: relative;
-    height: 100%;
+    height: 350px;
     width: 32.5%; }
+    @media screen and (max-width: 950px) {
+      .module-container .module {
+        margin-bottom: 1%;
+        width: 49.45%;
+        height: 300px; } }
+    @media screen and (max-width: 950px) {
+      .module-container .module:last-child {
+        width: 100%; } }
     .module-container .module img {
       max-width: 100%;
       width: 100%;
@@ -177,7 +190,7 @@ body {
       object-fit: cover; }
   .module-container .module-large {
     position: relative;
-    height: 70%;
+    height: 240px;
     width: 49.45%; }
     .module-container .module-large img {
       max-width: 100%;
@@ -245,23 +258,23 @@ body {
     top: -30px; }
 
 .top {
-  left: 50%;
   z-index: 5;
   color: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-50%, 0) scale(1);
+  transform: scale(1);
   transition: transform ease-in-out 300ms;
-  position: absolute;
+  position: relative;
   bottom: 20%;
   width: 50px;
   height: 50px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin: 100px auto; }
   .top:hover {
     cursor: pointer;
-    transform: translate(-50%, 0) scale(1.2); }
+    transform: scale(1.2); }
 
 .nav-main {
   display: flex;
@@ -286,6 +299,8 @@ body {
       padding: 5px 40px;
       align-self: center;
       border-right: 1px solid rgba(130, 130, 130, 0.4); }
+      .nav-main ul li:last-child {
+        border-right: none; }
       .nav-main ul li:hover {
         cursor: pointer; }
 
@@ -302,8 +317,8 @@ body {
   width: 100%;
   background: white;
   position: relative;
-  z-index: 5;
-  bottom: -280px;
+  z-index: -1;
+  bottom: 0;
   color: #555;
   display: flex;
   justify-content: space-around;

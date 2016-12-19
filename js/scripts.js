@@ -2,14 +2,21 @@ $(document).ready(function(){
 
   $(".more").click(function() {
       $('html, body').animate({
-          scrollTop: $(".section-two").offset().top
+          scrollTop: $(".section-two").offset().top,
+          behavior: 'smooth',
       }, 1500);
   });
 
   $(".top").click(function() {
-    debugger;
       $('html, body').animate({
-          scrollTop: $(".top-of-page").offset().top
+          scrollTop: $("#top-of-page").offset().top,
+          behavior: 'smooth',
+      }, 1500);
+  });
+  $(".go-home").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#top-of-page").offset().top,
+          behavior: 'smooth',
       }, 1500);
   });
 
@@ -18,6 +25,7 @@ $(document).ready(function(){
 
   var totalImages = $(".images").children().length; // # of total slideshow images
   var imageCounter = $(".images").children().length; // keeps track of current image
+
   $(".arrows .fa-angle-left").click(function(){
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");

@@ -21,6 +21,9 @@
       padding: 5px 40px;
       align-self: center;
       border-right: 1px solid $t-grey;
+      &:last-child {
+        border-right: none;
+      }
       &:hover {
         cursor: pointer;
       }

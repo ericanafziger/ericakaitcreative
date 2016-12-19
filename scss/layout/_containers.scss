@@ -9,10 +9,10 @@ body {
   color: $white;
   overflow: auto;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 .container {
-  overflow-x: hidden;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top:0;
   right:0;

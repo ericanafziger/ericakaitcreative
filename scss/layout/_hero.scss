@@ -12,10 +12,11 @@
     width: 100%;
     display: block;
     object-fit: cover;
-    display: none;
+    transition: opacity ease-in-out 2s;
+    opacity: 0;
   }
   .active {
-    display: block;
+    opacity: 1;
   }
 }
 
