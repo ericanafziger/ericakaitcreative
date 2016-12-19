@@ -12,6 +12,10 @@ h5 {
   margin-top: 5px;
   color: #868686; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 * {
   margin: 0;
   padding: 0;
@@ -204,15 +208,22 @@ body {
   align-items: center;
   position: absolute;
   transition: all ease-in-out 600ms;
-  top: 135%;
+  top: 137%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .hidden-module-text i {
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all ease-in-out 600ms;
+    top: -30px; }
   .hidden-module-text h5 {
     font-weight: normal; }
 
 .module:hover > .hidden-module-text {
   cursor: pointer;
   top: 50%; }
+  .module:hover > .hidden-module-text i {
+    transform: rotate(180deg); }
 
 .nav-main {
   display: flex;

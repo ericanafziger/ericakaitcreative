@@ -84,9 +84,15 @@
   align-items: center;
   position: absolute;
   transition: all ease-in-out 600ms;
-  top: 135%;
+  top: 137%;
   left: 50%;
   transform: translate(-50%, -50%);
+  i {
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all ease-in-out 600ms;
+    top: -30px;
+  }
   h5 {
     font-weight: normal;
   }
@@ -94,4 +100,7 @@
 .module:hover > .hidden-module-text {
     cursor: pointer;
     top: 50%;
+    i {
+      transform: rotate(180deg);
+    }
 }
