@@ -1,7 +1,6 @@
 //=================Hero Image Styling===================//
 
 .images {
-  opacity: 0.8;
   img {
     position: absolute;
     top: 0;
@@ -27,6 +26,9 @@
   height: 400px;
   margin: 0 auto;
   top: 45%;
+  @media screen and #{$md-break} {
+    top: 35%;
+  }
 }
 .hero-text {
   display: flex;

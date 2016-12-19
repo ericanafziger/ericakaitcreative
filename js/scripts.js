@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  // ================Page Scroll Functionality ================//
+
   $(".more").click(function() {
       $('html, body').animate({
           scrollTop: $(".section-two").offset().top,
@@ -19,6 +21,18 @@ $(document).ready(function(){
           behavior: 'smooth',
       }, 1500);
   });
+
+// ================Menu Animation ================//
+
+$(".menu-bars").click(function() {
+  $(".nav-line:nth-child(1)").toggleClass("animate-top");
+  $(".nav-line:nth-child(2)").toggleClass("animate-middle");
+  $(".nav-line:nth-child(3)").toggleClass("animate-bottom");
+  $(".wrap").toggleClass("pull");
+  $(".side-nav").toggleClass("push");
+
+
+});
 
 
 // ================Slideshow Functionality ================//

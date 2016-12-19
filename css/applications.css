@@ -29,6 +29,26 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.animate-top {
+  animation: top-bar 600ms 1 both; }
+
+.animate-middle {
+  animation: middle-bar 600ms 1 both; }
+
+.animate-bottom {
+  animation: bottom-bar 600ms 1 both; }
+
+@keyframes middle-bar {
+  100% {
+    opacity: 0; } }
+@keyframes top-bar {
+  100% {
+    transform: rotate(45deg);
+    top: 8px; } }
+@keyframes bottom-bar {
+  100% {
+    transform: rotate(-45deg);
+    top: -8px; } }
 * {
   margin: 0;
   padding: 0;
@@ -36,11 +56,19 @@ a {
 
 body {
   font-family: sans-serif;
-  background-color: black;
+  background-color: white;
   color: white;
   overflow: auto;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden; }
+
+.wrap {
+  position: relative;
+  left: 0;
+  box-shadow: 0px 0px 10px #555;
+  transition: left ease-in-out 200ms; }
+  .wrap.pull {
+    left: 300px; }
 
 .container {
   position: relative;
@@ -55,22 +83,20 @@ body {
     .container {
       height: 50vh; } }
 
-.images {
-  opacity: 0.8; }
-  .images img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    transition: opacity ease-in-out 2s;
-    opacity: 0; }
-  .images .active {
-    opacity: 1; }
+.images img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: opacity ease-in-out 2s;
+  opacity: 0; }
+.images .active {
+  opacity: 1; }
 
 .text-contain {
   position: relative;
@@ -78,6 +104,9 @@ body {
   height: 400px;
   margin: 0 auto;
   top: 45%; }
+  @media screen and (max-width: 740px) {
+    .text-contain {
+      top: 35%; } }
 
 .hero-text {
   display: flex;
@@ -321,6 +350,28 @@ body {
   z-index: 4;
   position: fixed;
   width: 100%; }
+  @media screen and (max-width: 740px) {
+    .nav-main {
+      justify-content: flex-start; } }
+  .nav-main .menu-bars {
+    margin-left: 10%; }
+    .nav-main .menu-bars:hover {
+      cursor: pointer; }
+    .nav-main .menu-bars .nav-line {
+      opacity: 1;
+      transform: rotate(0);
+      top: 0;
+      transition: all ease-in-out 200ms;
+      position: relative;
+      display: none;
+      height: 3px;
+      background: #555;
+      margin-bottom: 5px;
+      width: 30px; }
+      @media screen and (max-width: 740px) {
+        .nav-main .menu-bars .nav-line {
+          display: block;
+          width: 30px; } }
   .nav-main ul {
     width: 80%;
     color: #555;
@@ -331,6 +382,9 @@ body {
     height: 60px;
     text-transform: uppercase;
     font-size: 0.8em; }
+    @media screen and (max-width: 740px) {
+      .nav-main ul {
+        display: none; } }
     .nav-main ul li {
       padding: 5px 40px;
       align-self: center;
@@ -347,6 +401,16 @@ body {
   position: fixed;
   z-index: 4;
   top: 63px; }
+
+.side-nav {
+  position: absolute;
+  height: 100vh;
+  left: -300px;
+  width: 300px;
+  background: white;
+  transition: left ease-in-out 200ms; }
+  .side-nav.push {
+    left: 0; }
 
 .footer {
   height: 160px;

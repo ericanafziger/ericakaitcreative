@@ -1,0 +1,23 @@
+.animate-top {
+  animation: top-bar 600ms 1 both;
+}
+.animate-middle {
+  animation: middle-bar 600ms 1 both;
+}
+.animate-bottom {
+  animation: bottom-bar 600ms 1 both;
+}
+//===================Keyframes=====================//
+@keyframes middle-bar {
+  100% { opacity: 0}
+}
+@keyframes top-bar {
+  100% { transform: rotate(45deg);
+         top: 8px;
+       }
+}
+@keyframes bottom-bar {
+  100% { transform: rotate(-45deg);
+         top: -8px;
+       }
+}

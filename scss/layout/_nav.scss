@@ -7,6 +7,31 @@
   z-index: 4;
   position: fixed;
   width: 100%;
+  @media screen and #{$md-break} {
+    justify-content: flex-start;
+  }
+  .menu-bars {
+    margin-left: 10%;
+    &:hover {
+      cursor: pointer;
+    }
+    .nav-line {
+      opacity: 1;
+      transform: rotate(0);
+      top: 0;
+      transition: all ease-in-out 200ms;
+      position: relative;
+      display: none;
+      height: 3px;
+      background: $grey;
+      margin-bottom: 5px;
+      width: 30px;
+      @media screen and #{$md-break} {
+        display: block;
+        width: 30px;
+      }
+    }
+  }
   ul {
     width: 80%;
     color: $grey;
@@ -17,6 +42,9 @@
     height: 60px;
     text-transform: uppercase;
     font-size: 0.8em;
+    @media screen and #{$md-break} {
+      display: none;
+    }
     li {
       padding: 5px 40px;
       align-self: center;
@@ -37,4 +65,18 @@
   position: fixed;
   z-index: 4;
   top: 63px;
+}
+
+//====================== Start of Side Nav =====================//
+
+.side-nav {
+  position: absolute;
+  height: 100vh;
+  left: -300px;
+  width: 300px;
+  background: $white;
+  transition: left ease-in-out 200ms;
+  &.push {
+    left: 0;
+  }
 }
