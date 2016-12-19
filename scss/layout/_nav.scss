@@ -4,7 +4,7 @@
   align-items: center;
   background: $t-white;
   height: 60px;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   width: 100%;
   ul {
@@ -32,6 +32,6 @@
   width: 100%;
   background: $t-white;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 63px;
 }

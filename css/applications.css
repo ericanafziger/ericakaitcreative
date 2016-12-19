@@ -7,17 +7,27 @@ body {
   font-family: sans-serif;
   background-color: black;
   color: white;
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Raleway', sans-serif; }
 
 .container {
-  position: relative;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100vw;
   height: 100vh; }
+
+.section-two {
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  background: #b8b7b1; }
 
 .images {
   opacity: 0.8; }
@@ -52,7 +62,7 @@ body {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.85);
-    color: #444;
+    color: #555;
     height: 35px;
     width: 220px; }
 
@@ -98,12 +108,12 @@ body {
   align-items: center;
   background: rgba(255, 255, 255, 0.6);
   height: 60px;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   width: 100%; }
   .nav-main ul {
     width: 80%;
-    color: #444;
+    color: #555;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -123,7 +133,7 @@ body {
   width: 100%;
   background: rgba(255, 255, 255, 0.6);
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 63px; }
 
 /*# sourceMappingURL=applications.css.map */
