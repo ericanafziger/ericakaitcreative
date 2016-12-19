@@ -51,7 +51,7 @@
       align-items: center;
       background: $white;
       border: 1px solid transparent;
-      transition: all ease-in 300ms;
+      transition: all ease-in-out 300ms;
       width: 80%;
       height: 90%;
       left: 50%;
@@ -61,7 +61,7 @@
       &:hover {
         cursor: pointer;
         border: 1px solid $t-grey;
-        box-shadow: 0px 0px 10px $grey;
+        border-radius: 5px;
       }
     }
   }
@@ -75,6 +75,7 @@
   background: $grey;
 }
 .hidden-module-text {
+  border-radius: 5px;
   width: 80%;
   height: 80%;
   background: $t-white-2;
@@ -84,24 +85,32 @@
   align-items: center;
   position: absolute;
   transition: all ease-in-out 600ms;
-  top: 137%;
+  top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
   i {
     position: absolute;
     transform: rotate(0deg);
     transition: all ease-in-out 600ms;
-    top: -30px;
+    top: -60px;
   }
   h5 {
     font-weight: normal;
   }
+  a {
+    transition: color ease-in-out 200ms;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $forest;
+
+  }
 }
 .module:hover > .hidden-module-text {
-    cursor: pointer;
     top: 50%;
     i {
       transform: rotate(180deg);
+      top: -30px;
     }
 }
 .top {

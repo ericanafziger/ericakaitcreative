@@ -4,6 +4,11 @@ h2 {
   margin-bottom: 5px;
   color: #555; }
 
+h4 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #555; }
+
 h5 {
   font-size: 1.1em;
   font-weight: lighter;
@@ -12,9 +17,17 @@ h5 {
   margin-top: 5px;
   color: #868686; }
 
+p {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #868686;
+  margin-top: 5px; }
+
 a {
   text-decoration: none;
   color: inherit; }
+  a:hover {
+    text-decoration: underline; }
 
 * {
   margin: 0;
@@ -179,7 +192,7 @@ body {
       align-items: center;
       background: white;
       border: 1px solid transparent;
-      transition: all ease-in 300ms;
+      transition: all ease-in-out 300ms;
       width: 80%;
       height: 90%;
       left: 50%;
@@ -189,7 +202,7 @@ body {
       .module-container .module-large .module-text:hover {
         cursor: pointer;
         border: 1px solid rgba(130, 130, 130, 0.4);
-        box-shadow: 0px 0px 10px #555; }
+        border-radius: 5px; }
 
 .line {
   position: absolute;
@@ -199,6 +212,7 @@ body {
   background: #555; }
 
 .hidden-module-text {
+  border-radius: 5px;
   width: 80%;
   height: 80%;
   background: rgba(255, 255, 255, 0.85);
@@ -208,22 +222,27 @@ body {
   align-items: center;
   position: absolute;
   transition: all ease-in-out 600ms;
-  top: 137%;
+  top: 140%;
   left: 50%;
   transform: translate(-50%, -50%); }
   .hidden-module-text i {
     position: absolute;
     transform: rotate(0deg);
     transition: all ease-in-out 600ms;
-    top: -30px; }
+    top: -60px; }
   .hidden-module-text h5 {
     font-weight: normal; }
+  .hidden-module-text a {
+    transition: color ease-in-out 200ms; }
+  .hidden-module-text a:hover {
+    text-decoration: none;
+    color: #3c3e16; }
 
 .module:hover > .hidden-module-text {
-  cursor: pointer;
   top: 50%; }
   .module:hover > .hidden-module-text i {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    top: -30px; }
 
 .top {
   left: 50%;
