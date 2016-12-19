@@ -6,7 +6,12 @@ $(document).ready(function(){
       }, 1500);
   });
 
-
+  $(".top").click(function() {
+    debugger;
+      $('html, body').animate({
+          scrollTop: $(".top-of-page").offset().top
+      }, 1500);
+  });
 
 
 // ================Slideshow Functionality ================//
