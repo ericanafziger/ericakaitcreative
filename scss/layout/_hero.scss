@@ -1,0 +1,56 @@
+//=================Hero Image Styling===================//
+
+.images {
+  opacity: 0.7;
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}
+
+//=================Hero Arrows Styling===================//
+
+.arrows {
+  position: relative;
+  top: 50%;
+  i {
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 1s;
+    margin-right: 2%;
+    z-index: 2;
+    margin-left: 2%;
+    &:last-child {
+      right: 0%;
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+//=================Hero Circles Styling===================//
+
+.circles {
+  position: absolute;
+  top: 90%;
+  font-size: 0.8em;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%,0);
+  i:hover {
+    cursor: pointer;
+  }
+}
