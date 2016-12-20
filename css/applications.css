@@ -83,37 +83,6 @@ body {
     .container {
       height: 70vh; } }
 
-.about {
-  width: 100%;
-  background: #dadad7; }
-
-.content {
-  position: relative;
-  top: 120px;
-  margin: 0 auto;
-  max-width: 900px;
-  width: 80%;
-  padding: 5% 12%;
-  background: white;
-  text-align: center; }
-  .content h2 {
-    width: 60%;
-    margin: 0 auto;
-    border-bottom: 1px solid rgba(130, 130, 130, 0.4);
-    padding-bottom: 15px;
-    margin-bottom: 15px; }
-  .content p {
-    font-style: normal;
-    font-weight: bold;
-    font-size: .85em;
-    line-height: 1.5em;
-    margin-bottom: 15px; }
-  .content img {
-    max-width: 90%; }
-  .content .top {
-    color: #555;
-    margin: 50px auto 90px auto; }
-
 .images img {
   position: absolute;
   top: 0;
@@ -216,6 +185,37 @@ body {
   .more:hover {
     cursor: pointer;
     transform: translate(-50%, 0) scale(1.2); }
+
+.about {
+  width: 100%;
+  background: #dadad7; }
+
+.content {
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
+  padding: 5% 12%;
+  background: white;
+  text-align: center; }
+  .content h2 {
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.4);
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+  .content p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: .85em;
+    line-height: 1.5em;
+    margin-bottom: 15px; }
+  .content img {
+    max-width: 90%; }
+  .content .top {
+    color: #555;
+    margin: 50px auto 90px auto; }
 
 .section-two {
   height: 100%;
