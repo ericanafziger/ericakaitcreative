@@ -234,13 +234,17 @@ body {
     @media screen and (max-width: 740px) {
       .blog .content h4 {
         display: none; } }
+  .blog .content a {
+    text-decoration: none; }
   .blog .content .image-container {
     display: flex;
     flex-wrap: wrap; }
     .blog .content .image-container .image {
+      display: flex;
+      align-items: center;
       position: relative;
       width: 33.33%;
-      padding: 2.5px 5px;
+      padding: 5px 5px;
       height: 100%; }
       .blog .content .image-container .image img {
         max-height: 100%;
@@ -254,10 +258,11 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 20px;
   width: 90%;
-  height: 60%;
+  height: 80%;
   background: rgba(255, 255, 255, 0.85);
   top: 50%;
   left: 50%;
@@ -268,6 +273,7 @@ body {
   .blog .hover-text small {
     font-size: .7em; }
   .blog .hover-text h2 {
+    font-size: 1.5em;
     margin: 0;
     padding: 0; }
   .blog .hover-text h3 {
