@@ -22,7 +22,7 @@ $(document).ready(function(){
       }, 1500);
   });
 
-// ================Menu Animation ================//
+// ================Menu Bars Animation ================//
 
 $(".menu-bars").click(function() {
   $(".nav-line:nth-child(1)").toggleClass("animate-top");
@@ -30,10 +30,7 @@ $(".menu-bars").click(function() {
   $(".nav-line:nth-child(3)").toggleClass("animate-bottom");
   $(".wrap").toggleClass("pull");
   $(".side-nav").toggleClass("push");
-
-
 });
-
 
 // ================Slideshow Functionality ================//
 

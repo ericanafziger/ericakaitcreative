@@ -38,13 +38,13 @@ a {
 .animate-bottom {
   animation: bottom-bar 800ms 1 both; }
 
-@keyframes middle-bar {
-  100% {
-    opacity: 0; } }
 @keyframes top-bar {
   100% {
     transform: rotate(45deg);
     top: 8px; } }
+@keyframes middle-bar {
+  100% {
+    opacity: 0; } }
 @keyframes bottom-bar {
   100% {
     transform: rotate(-45deg);
@@ -64,6 +64,7 @@ body {
 .wrap {
   position: relative;
   left: 0;
+  top: 0;
   box-shadow: 0px 0px 10px #555;
   transition: left ease-in-out 200ms; }
   .wrap.pull {
@@ -81,6 +82,37 @@ body {
   @media screen and (max-width: 740px) {
     .container {
       height: 70vh; } }
+
+.about {
+  width: 100%;
+  background: #dadad7; }
+
+.content {
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
+  padding: 5% 12%;
+  background: white;
+  text-align: center; }
+  .content h2 {
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.4);
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+  .content p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: .85em;
+    line-height: 1.5em;
+    margin-bottom: 15px; }
+  .content img {
+    max-width: 90%; }
+  .content .top {
+    color: #555;
+    margin: 50px auto 90px auto; }
 
 .images img {
   position: absolute;
@@ -345,6 +377,7 @@ body {
 
 .nav-main {
   position: fixed;
+  top: 0;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -483,6 +516,7 @@ body {
   width: 100%;
   background: white;
   position: relative;
+  border-top: 1px solid #dadad7;
   z-index: 1;
   bottom: 0;
   color: #555;

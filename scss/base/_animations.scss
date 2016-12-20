@@ -1,3 +1,4 @@
+//===================Menu Bars Animation=====================//
 .animate-top {
   animation: top-bar 800ms 1 both;
 }
@@ -8,13 +9,13 @@
   animation: bottom-bar 800ms 1 both;
 }
 //===================Keyframes=====================//
-@keyframes middle-bar {
-  100% { opacity: 0}
-}
 @keyframes top-bar {
   100% { transform: rotate(45deg);
-         top: 8px;
-       }
+    top: 8px;
+  }
+}
+@keyframes middle-bar {
+  100% { opacity: 0}
 }
 @keyframes bottom-bar {
   100% { transform: rotate(-45deg);
