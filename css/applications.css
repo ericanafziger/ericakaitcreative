@@ -429,7 +429,7 @@ body {
   display: flex; }
 .dropdown .dropdown-menu {
   z-index: 10;
-  background: grey;
+  background: rgba(255, 255, 255, 0.85);
   left: 0px;
   top: 60px;
   position: absolute;
