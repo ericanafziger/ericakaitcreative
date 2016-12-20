@@ -56,14 +56,10 @@
     }
     li {
       white-space: nowrap;
+      height: 100%;
       position: relative;
-      padding: 20px 40px;
+      padding: 25px 40px;
       align-self: center;
-      // border-right: 1px solid $t-grey;
-      &:last-child {
-        border-right: none;
-        padding-right: 0;
-      }
       &:hover {
         cursor: pointer;
       }
@@ -74,8 +70,8 @@
   height: 1px;
   width: 100%;
   background: $t-white-2;
-  position: fixed;
-  z-index: 4;
+  position: absolute;
+  z-index: 2;
   top: 63px;
 }
 
@@ -96,31 +92,35 @@
 
 //====================== Dropdown Menu =====================//
 .dropdown {
+  &:hover {
+    background: lighten($light-grey, 35%);
+  }
   &:hover > ul.dropdown-menu {
-    display: flex;
+    display: block;
   }
   .dropdown-menu {
+    background: lighten($light-grey, 35%);
+    height: auto;
     z-index: 10;
-    background: $t-white-2;
-    left: 0px;
+    left: 0;
     top: 60px;
     position: absolute;
     display: none;
-    flex-direction: column;
-    width: 200px;
-    height: 200px;
+    width: 240px;
     &:hover {
-      display: flex;
+      display: block;
     }
     li {
-      position: relative;
-      align-self: flex-start;
+      padding: 20px;
+      white-space: normal;
+      transition: background ease-in-out 500ms;
+      position: static;
       border: none;
-      list-style: circle;
-      margin-left: 40px;
-      padding: 0;
-      line-height: 3em;
+      padding: 20px 0 20px 40px;
       font-size: 1.3em;
+      &:hover {
+        background: $t-white;
+      }
     }
   }
 }
