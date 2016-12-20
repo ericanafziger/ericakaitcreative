@@ -1,0 +1,37 @@
+.blog {
+  .content {
+    width: 100%;
+    max-width: 1400px;
+    padding: 3% 0 5% 0;
+    h2 {
+      margin: 20px auto;
+      font-size: 2em;
+      font-family: serif;
+      border-bottom: none;
+    }
+    h4 {
+      font-weight: bold;
+      @media screen and #{$md-break} {
+        display: none;
+      }
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      .image {
+        width: 33.33%;
+        padding: 2.5px 5px;
+        height: 100%;
+        img {
+          max-height: 100%;
+          max-width: 100%;
+          width: 100%;
+        }
+        @media screen and #{$md-break} {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

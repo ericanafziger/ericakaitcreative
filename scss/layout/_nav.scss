@@ -1,5 +1,5 @@
 .nav-main {
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   margin: 0 auto;
@@ -128,21 +128,21 @@
 //====================== Dropdown Menu =====================//
 .dropdown {
   &:hover {
-    background: lighten($light-grey, 35%);
+    // background: lighten($light-grey, 35%);
   }
   &:hover > ul.dropdown-menu {
     display: block;
   }
   .dropdown-menu {
-    background: lighten($light-grey, 35%);
+    background: $white;
     height: auto;
     z-index: 10;
-    left: 0;
-    transform: translate(0,0);
+    left: 50%;
+    transform: translate(-50%,0);
     top: 60px;
     position: absolute;
     display: none;
-    width: 240px;
+    width: 200px;
     &:hover {
       display: block;
     }
@@ -152,10 +152,11 @@
       transition: background ease-in-out 500ms;
       position: static;
       border: none;
-      padding: 20px 0 20px 40px;
+      text-align: center;
+      padding: 20px 0 20px 0;
       font-size: 1.3em;
       &:hover {
-        background: $t-white;
+        background: $t-grey;
       }
     }
   }
