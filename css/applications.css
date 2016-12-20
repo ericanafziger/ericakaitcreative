@@ -258,6 +258,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 20px;
   width: 90%;
@@ -269,6 +270,16 @@ body {
   z-index: 3;
   opacity: 0;
   transition: opacity ease-in-out 500ms; }
+  @media screen and (max-width: 740px) {
+    .blog .hover-text {
+      position: absolute;
+      width: 100%;
+      height: 120px;
+      padding-top: 30px;
+      justify-content: center;
+      top: auto;
+      bottom: -62px;
+      opacity: 1; } }
   .blog .hover-text small {
     font-size: .7em; }
   .blog .hover-text h2 {
