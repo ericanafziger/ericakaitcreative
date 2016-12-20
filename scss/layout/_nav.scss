@@ -1,11 +1,11 @@
 .nav-main {
+  position: fixed;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
   background: $t-white-2;
   height: 60px;
   z-index: 4;
-  position: fixed;
   width: 100%;
   @media screen and #{$md-break} {
     justify-content: flex-start;
@@ -42,12 +42,15 @@
     }
   }
   ul {
+    position: relative;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%,0);
     width: 80%;
     color: $grey;
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 60px;
     text-transform: uppercase;
     font-size: 0.8em;
@@ -103,6 +106,7 @@
     height: auto;
     z-index: 10;
     left: 0;
+    transform: translate(0,0);
     top: 60px;
     position: absolute;
     display: none;
