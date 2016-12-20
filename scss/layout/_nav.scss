@@ -55,9 +55,11 @@
       display: none;
     }
     li {
-      padding: 5px 40px;
+      white-space: nowrap;
+      position: relative;
+      padding: 20px 40px;
       align-self: center;
-      border-right: 1px solid $t-grey;
+      // border-right: 1px solid $t-grey;
       &:last-child {
         border-right: none;
         padding-right: 0;
@@ -84,9 +86,41 @@
   height: 100vh;
   left: -300px;
   width: 300px;
+  color: $grey;
   background: $white;
   transition: left ease-in-out 200ms;
   &.push {
     left: 0;
+  }
+}
+
+//====================== Dropdown Menu =====================//
+.dropdown {
+  &:hover > ul.dropdown-menu {
+    display: flex;
+  }
+  .dropdown-menu {
+    z-index: 10;
+    background: grey;
+    left: 0px;
+    top: 60px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    &:hover {
+      display: flex;
+    }
+    li {
+      position: relative;
+      align-self: flex-start;
+      border: none;
+      list-style: circle;
+      margin-left: 40px;
+      padding: 0;
+      line-height: 3em;
+      font-size: 1.3em;
+    }
   }
 }
