@@ -45,6 +45,18 @@
       width: 50%;
       position: relative;
       margin-top: 40px;
+      h2:hover {
+        color: $light-grey;
+      }
+      @media screen and #{$sm-break} {
+        p {
+          display: none;
+        }
+        h2 {
+          font-size: 1em;
+          border: none;
+        }
+      }
     }
     .image-container {
       display: flex;

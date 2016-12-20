@@ -221,13 +221,19 @@ body {
 .blog .content {
   width: 100%;
   max-width: 1400px;
-  padding: 3% 0 5% 0; }
+  padding: 1% 0 5% 0; }
+  @media screen and (max-width: 740px) {
+    .blog .content {
+      padding-top: 0; } }
   .blog .content h2 {
     margin: 20px auto;
     width: auto;
     font-size: 2em;
     font-family: serif;
     border-bottom: none; }
+    @media screen and (max-width: 740px) {
+      .blog .content h2 {
+        margin-top: 0; } }
   .blog .content h4 {
     font-weight: bold; }
     @media screen and (max-width: 740px) {
@@ -334,6 +340,14 @@ body {
       width: 50%;
       position: relative;
       margin-top: 40px; }
+      .blog-post .content .prev-next h2:hover {
+        color: #868686; }
+      @media screen and (max-width: 540px) {
+        .blog-post .content .prev-next p {
+          display: none; }
+        .blog-post .content .prev-next h2 {
+          font-size: 1em;
+          border: none; } }
     .blog-post .content .image-container {
       display: flex;
       flex-wrap: wrap; }

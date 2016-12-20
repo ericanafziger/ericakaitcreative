@@ -2,13 +2,19 @@
   .content {
     width: 100%;
     max-width: 1400px;
-    padding: 3% 0 5% 0;
+    padding: 1% 0 5% 0;
+    @media screen and #{$md-break} {
+      padding-top: 0;
+    }
     h2 {
       margin: 20px auto;
       width: auto;
       font-size: 2em;
       font-family: serif;
       border-bottom: none;
+      @media screen and #{$md-break} {
+        margin-top: 0;
+      }
     }
     h4 {
       font-weight: bold;
