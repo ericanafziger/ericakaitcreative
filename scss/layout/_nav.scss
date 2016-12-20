@@ -20,7 +20,7 @@
     }
   }
   .menu-bars {
-    margin-left: 10%;
+    margin-left: 5%;
     &:hover {
       cursor: pointer;
     }
@@ -81,9 +81,11 @@
 //====================== Start of Side Nav =====================//
 
 .side-nav {
+  padding: 40px;
   position: fixed;
   height: 100vh;
   left: -300px;
+  z-index: 6;
   width: 300px;
   color: $grey;
   background: $white;
@@ -91,6 +93,35 @@
   &.push {
     left: 0;
   }
+  li {
+    list-style: none;
+    border-bottom: 1px solid $t-grey;
+    &:last-child {
+      border: none;
+    }
+  }
+  h2 {
+    padding: 15px 5px;
+    font-size: 1.2em;
+  }
+  .side-drop-menu {
+    position: relative;
+    transition: all ease-in-out 500ms;
+    margin-left: 30px;
+    opacity: 1;
+    max-height: 200px;
+    li {
+      list-style: circle;
+      padding: 15px 0;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+.side-dropdown:active > .side-drop-menu {
+  opacity: 1;
+  max-height: 200px;
 }
 
 //====================== Dropdown Menu =====================//
