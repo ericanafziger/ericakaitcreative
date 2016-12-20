@@ -291,14 +291,9 @@ body {
   max-width: 100%;
   width: 100%; }
   .blog-post .content .top.normal {
-    background: none;
-    margin: 0 auto;
-    z-index: 5;
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    transform: translate(0%, 0); }
-  .blog-post .content .top {
+    margin: 20px auto; }
+  .blog-post .content .top.fixed {
+    display: none;
     background: rgba(255, 255, 255, 0.6);
     z-index: 0;
     position: fixed;
@@ -306,6 +301,10 @@ body {
     bottom: -8%;
     left: 50%;
     transform: translate(-50%, 0); }
+    .blog-post .content .top.fixed i {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); }
   .blog-post .content .text {
     margin: 0 auto;
     max-width: 1100px;

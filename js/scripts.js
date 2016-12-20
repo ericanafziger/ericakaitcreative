@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  var fromBot = $(document).height()-350-$(window).height();
+  // ================Scroll Top Blog Post Functionality ================//
+    $(window).scroll(function() {
+
+      if ($(document).scrollTop() > 350 && $(document).scrollTop() < fromBot) {
+        $(".top.fixed").fadeIn(300);
+      } else {
+        $(".top.fixed").fadeOut(300);
+      }
+    });
 
   // ================Page Scroll Functionality ================//
 
@@ -6,20 +16,20 @@ $(document).ready(function(){
       $('html, body').animate({
           scrollTop: $(".section-two").offset().top,
           behavior: 'smooth',
-      }, 1500);
+      }, 1000);
   });
 
   $(".top").click(function() {
       $('html, body').animate({
           scrollTop: $("#top-of-page").offset().top,
           behavior: 'smooth',
-      }, 1500);
+      }, 1000);
   });
   $(".go-home").click(function() {
       $('html, body').animate({
           scrollTop: $("#top-of-page").offset().top,
           behavior: 'smooth',
-      }, 1500);
+      }, 1000);
   });
 
 // ================Menu Bars Animation ================//
