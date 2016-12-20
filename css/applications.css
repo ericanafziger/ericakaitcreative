@@ -30,13 +30,13 @@ a {
     text-decoration: underline; }
 
 .animate-top {
-  animation: top-bar 600ms 1 both; }
+  animation: top-bar 800ms 1 both; }
 
 .animate-middle {
-  animation: middle-bar 600ms 1 both; }
+  animation: middle-bar 400ms 1 both; }
 
 .animate-bottom {
-  animation: bottom-bar 600ms 1 both; }
+  animation: bottom-bar 800ms 1 both; }
 
 @keyframes middle-bar {
   100% {
@@ -416,7 +416,7 @@ body {
   top: 63px; }
 
 .side-nav {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   left: -300px;
   width: 300px;
