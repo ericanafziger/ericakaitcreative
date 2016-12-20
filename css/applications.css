@@ -158,11 +158,10 @@ body {
     .arrows i:hover {
       opacity: 1;
       cursor: pointer; }
-
-.fa-angle-right:before, .fa-angle-left:before {
-  position: absolute;
-  top: 0;
-  color: white; }
+  .arrows .fa-angle-right:before, .arrows .fa-angle-left:before {
+    position: absolute;
+    top: 0;
+    color: white; }
 
 .circles {
   position: absolute;
@@ -295,6 +294,8 @@ body {
     width: 100%; }
     .blog-post .content .top.normal {
       margin: 20px auto; }
+    .blog-post .content a {
+      text-decoration: none; }
     .blog-post .content .top.fixed {
       display: none;
       background: rgba(255, 255, 255, 0.6);
@@ -318,6 +319,10 @@ body {
         margin-bottom: 10px; }
       .blog-post .content .text p {
         margin-bottom: 0px; }
+    .blog-post .content .prev-next {
+      width: 50%;
+      position: relative;
+      margin-top: 40px; }
     .blog-post .content .image-container {
       display: flex;
       flex-wrap: wrap; }

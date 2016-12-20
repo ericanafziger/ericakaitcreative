@@ -9,6 +9,9 @@
     .top.normal {
       margin: 20px auto;
     }
+    a {
+      text-decoration: none;
+    }
     .top.fixed {
       display: none;
       background: $t-white;
@@ -38,6 +41,11 @@
         margin-bottom: 0px;
       }
     }
+    .prev-next {
+      width: 50%;
+      position: relative;
+      margin-top: 40px;
+    }
     .image-container {
       display: flex;
       flex-wrap: wrap;
@@ -62,6 +70,7 @@
           max-width: 100%;
           width: 100%;
         }
+
         @media screen and #{$md-break} {
           width: 100%;
         }

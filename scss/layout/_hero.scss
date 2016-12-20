@@ -74,11 +74,11 @@
       cursor: pointer;
     }
   }
-}
-.fa-angle-right:before, .fa-angle-left:before {
-  position: absolute;
-  top: 0;
-  color: $white;
+  .fa-angle-right:before, .fa-angle-left:before {
+    position: absolute;
+    top: 0;
+    color: $white;
+  }
 }
 
 //=================Hero Circles Styling===================//
