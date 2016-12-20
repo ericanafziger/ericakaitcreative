@@ -21,13 +21,16 @@
 
 //=================Hero Text Styling===================//
 .text-contain {
-  position: relative;
+  position: absolute;
   max-width: 1400px;
   height: 400px;
-  margin: 0 auto;
+  width: 100%;
+  z-index: 3;
   top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
   @media screen and #{$md-break} {
-    top: 35%;
+    display: none;
   }
 }
 .hero-text {

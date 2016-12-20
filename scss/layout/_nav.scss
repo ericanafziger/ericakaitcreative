@@ -2,13 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $t-white;
+  background: $t-white-2;
   height: 60px;
   z-index: 4;
   position: fixed;
   width: 100%;
   @media screen and #{$md-break} {
     justify-content: flex-start;
+  }
+  .title {
+    display: none;
+    width: 0px;
+    margin: 0 auto;
+    @media screen and #{$md-break} {
+      display: inline;
+      width: 200px;
+    }
   }
   .menu-bars {
     margin-left: 10%;
@@ -51,6 +60,7 @@
       border-right: 1px solid $t-grey;
       &:last-child {
         border-right: none;
+        padding-right: 0;
       }
       &:hover {
         cursor: pointer;
@@ -61,7 +71,7 @@
 .bottom-border {
   height: 1px;
   width: 100%;
-  background: $t-white;
+  background: $t-white-2;
   position: fixed;
   z-index: 4;
   top: 63px;
