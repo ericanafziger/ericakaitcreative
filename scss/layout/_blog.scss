@@ -5,6 +5,7 @@
     padding: 3% 0 5% 0;
     h2 {
       margin: 20px auto;
+      width: auto;
       font-size: 2em;
       font-family: serif;
       border-bottom: none;
@@ -19,6 +20,7 @@
       display: flex;
       flex-wrap: wrap;
       .image {
+        position: relative;
         width: 33.33%;
         padding: 2.5px 5px;
         height: 100%;
@@ -34,4 +36,40 @@
     }
   }
 
+}
+.blog {
+  .hover-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+    height: 60%;
+    background: $t-white-2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity ease-in-out 500ms;
+    small {
+      font-size: .7em;
+    }
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      margin: 10px 50px;
+      padding: 10px;
+      border-top: 1px solid $t-grey;
+      color: $grey;
+    }
+  }
+}
+
+.image:hover > .hover-text {
+  cursor: pointer;
+  opacity: 1;
 }
