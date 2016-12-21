@@ -1,9 +1,41 @@
-form {
+.contact {
+  max-width: $max-width;
   margin: 0 auto;
+  .content {
+    padding: 0;
+    max-width: 800px;
+    @media screen and #{$md-break} {
+      max-width: 100%;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+    .top {
+      margin: 100px auto;
+      top: -80px;
+    }
+  }
+}
+
+
+form {
+  margin: 0 auto 20px auto;
   max-width: 800px;
   display: flex;
   flex-wrap: wrap;
-  input, select, button {
+  label {
+    flex: 0;
+    flex-basis: 20%;
+    color: $grey;
+    margin-top: 20px;
+    font-size: .8em;
+    align-self: flex-start;
+    text-indent: 10px;
+    text-align: left;
+  }
+  input, select, button, textarea {
+    font-family: 'Raleway', sans-serif;
     margin: 1%;
     flex:1;
     flex-basis: 40%;
@@ -11,11 +43,40 @@ form {
     font-size: .8em;
     text-indent: 10px;
     color: lighten($grey, 30%);
+    &:focus {
+      outline: none;
+      border: 1px solid $light-grey;
+    }
+    @media screen and #{$md-break} {
+      flex-basis: 100%;
+    }
   }
   select {
     background: none;
+    flex-basis: 100%;
     border: none;
     outline: 1px solid $t-grey;
     color: lighten($grey, 30%);
+  }
+  textarea {
+    padding-top: 10px;
+    height: 100px;
+    max-height: 300px;
+    flex-basis: 100%;
+    outline: 1px solid $t-grey;
+    border: none;
+  }
+  button {
+    max-width: 200px;
+    margin: 10px auto;
+    flex-basis: 40%;
+    background: none;
+    border: 1px solid $t-grey;
+    transition: background 200ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: $grey;
+      color: $white;
+    }
   }
 }
