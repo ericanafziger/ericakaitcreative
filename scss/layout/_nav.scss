@@ -87,12 +87,13 @@
   height: 100vh;
   left: -300px;
   z-index: 6;
-  width: 80%;
+  width: 0%;
   color: $grey;
   background: $white;
   transition: left ease-in-out 200ms;
   &.push {
     left: 0;
+    width: 80%;
   }
   li {
     list-style: none;
