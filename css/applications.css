@@ -199,26 +199,30 @@ body {
 
 .about {
   width: 100%;
-  height: 130vh;
-  background: #dadad7; }
+  background: #dadad7;
+  padding-top: 1px;
+  margin-top: -1px; }
 
-.content h2 {
-  width: 60%;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(130, 130, 130, 0.4);
-  padding-bottom: 15px;
-  margin-bottom: 15px; }
-.content p {
-  font-style: normal;
-  font-weight: bold;
-  font-size: .85em;
-  line-height: 1.5em;
-  margin-bottom: 15px; }
-.content img {
-  max-width: 90%; }
-.content .top {
-  color: #555;
-  margin: 40px auto 0px; }
+.content {
+  margin-top: 100px;
+  top: 0; }
+  .content h2 {
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.4);
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+  .content p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: .85em;
+    line-height: 1.5em;
+    margin-bottom: 15px; }
+  .content img {
+    max-width: 90%; }
+  .content .top {
+    color: #555;
+    margin: 40px auto 0px; }
 
 .blog {
   overflow: auto; }
@@ -315,8 +319,11 @@ body {
 
 .contact {
   max-width: 1100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: auto;
+  background: red; }
   .contact .content {
+    margin-top: 150px;
     padding: 0;
     max-width: 800px; }
     @media screen and (max-width: 740px) {

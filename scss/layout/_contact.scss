@@ -1,7 +1,10 @@
 .contact {
   max-width: $max-width;
   margin: 0 auto;
+  overflow: auto;
+  background: red;
   .content {
+    margin-top: 150px;
     padding: 0;
     max-width: 800px;
     @media screen and #{$md-break} {
