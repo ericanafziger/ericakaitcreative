@@ -470,9 +470,11 @@ form {
 
 .portfolio {
   max-width: 1400px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: auto; }
   .portfolio .content {
-    top: 50px;
+    top: 0;
+    margin-top: 50px;
     max-width: 100%;
     width: 100%; }
     .portfolio .content .top.normal {
@@ -839,6 +841,42 @@ form {
       background: rgba(130, 130, 130, 0.4); }
 
 .footer {
-  height: 160px; }
+  height: 160px;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #dadad7;
+  bottom: 0;
+  color: #555;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media screen and (max-width: 740px) {
+    .footer {
+      height: 100%;
+      padding: 10px 0; } }
+  .footer .item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px; }
+    @media screen and (max-width: 740px) {
+      .footer .item-container {
+        flex-direction: column; } }
+  .footer .footer-item {
+    width: 30%;
+    text-align: center;
+    border-left: 1px solid rgba(130, 130, 130, 0.4); }
+    .footer .footer-item:nth-child(1) {
+      border: none; }
+    @media screen and (max-width: 740px) {
+      .footer .footer-item:nth-child(2) {
+        border-top: 1px solid rgba(130, 130, 130, 0.4);
+        border-bottom: 1px solid rgba(130, 130, 130, 0.4); } }
+    @media screen and (max-width: 740px) {
+      .footer .footer-item {
+        width: 100%;
+        padding: 20px 0;
+        border-left: none; } }
 
 /*# sourceMappingURL=applications.css.map */

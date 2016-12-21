@@ -1,9 +1,11 @@
 .portfolio {
   max-width: 1400px;
   margin: 0 auto;
+  overflow: auto;
 
   .content {
-    top: 50px;
+    top: 0;
+    margin-top: 50px;
     max-width: 100%;
     width: 100%;
     .top.normal {
