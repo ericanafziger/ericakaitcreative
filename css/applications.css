@@ -65,11 +65,9 @@ body {
   position: relative;
   left: 0;
   top: 0;
-  box-shadow: 0px 0px 0px #555;
   transition: left ease-in-out 200ms; }
   .wrap.pull {
-    left: 300px;
-    box-shadow: 0px 0px 10px #555; }
+    left: 300px; }
 
 .container {
   position: relative;
@@ -241,6 +239,9 @@ body {
         display: none; } }
   .blog .content a {
     text-decoration: none; }
+  @media screen and (max-width: 740px) {
+    .blog .content .top {
+      top: -30px; } }
   .blog .content .image-container {
     display: flex;
     flex-wrap: wrap; }
@@ -325,13 +326,21 @@ form {
   flex-wrap: wrap; }
   form label {
     flex: 0;
-    flex-basis: 20%;
+    flex-basis: 30%;
     color: #555;
     margin-top: 20px;
     font-size: .8em;
     align-self: flex-start;
     text-indent: 10px;
     text-align: left; }
+  form input:-webkit-autofill,
+  form input:-webkit-autofill:hover,
+  form input:-webkit-autofill:focus,
+  form input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    border-color: rgba(130, 130, 130, 0.4);
+    border-style: solid;
+    border-width: 1px; }
   form input, form select, form button, form textarea {
     font-family: 'Raleway', sans-serif;
     margin: 1%;
@@ -341,9 +350,10 @@ form {
     font-size: .8em;
     text-indent: 10px;
     color: #a2a2a2; }
-    form input:focus, form select:focus, form button:focus, form textarea:focus {
+    form input:focus, form input:active, form select:focus, form select:active, form button:focus, form button:active, form textarea:focus, form textarea:active {
       outline: none;
-      border: 1px solid #868686; }
+      border: 1px solid #868686;
+      background: none; }
     @media screen and (max-width: 740px) {
       form input, form select, form button, form textarea {
         flex-basis: 100%; } }
@@ -444,6 +454,82 @@ form {
           width: 100%; }
         @media screen and (max-width: 740px) {
           .blog-post .content .image-container .image-vertical {
+            width: 100%; } }
+
+.portfolio {
+  max-width: 1400px;
+  margin: 0 auto; }
+  .portfolio .content {
+    top: 50px;
+    max-width: 100%;
+    width: 100%; }
+    .portfolio .content .top.normal {
+      margin: 20px auto; }
+    .portfolio .content a {
+      text-decoration: none; }
+    @media screen and (max-width: 740px) {
+      .portfolio .content .top.normal {
+        top: -30px; } }
+    .portfolio .content .top.fixed {
+      display: none;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 0;
+      position: fixed;
+      border: none;
+      bottom: -80px;
+      left: 50%;
+      transform: translate(-50%, 0); }
+      .portfolio .content .top.fixed i {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .portfolio .content .text {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 35px; }
+      .portfolio .content .text h4 {
+        margin-bottom: 15px; }
+      .portfolio .content .text h5 {
+        margin-bottom: 10px; }
+      .portfolio .content .text p {
+        margin-bottom: 0px; }
+    .portfolio .content .prev-next {
+      width: 50%;
+      position: relative;
+      margin-top: 40px; }
+      .portfolio .content .prev-next h2 {
+        border: none;
+        font-size: 1.3em;
+        white-space: wrap;
+        font-family: serif; }
+        .portfolio .content .prev-next h2:hover {
+          color: #868686; }
+        @media screen and (max-width: 540px) {
+          .portfolio .content .prev-next h2 {
+            font-size: 1em; } }
+    .portfolio .content .image-container {
+      display: flex;
+      flex-wrap: wrap; }
+      .portfolio .content .image-container .image-horizontal {
+        position: relative;
+        width: 100%;
+        padding: 2.5px 5px;
+        height: 100%; }
+        .portfolio .content .image-container .image-horizontal img {
+          max-height: 100%;
+          max-width: 100%;
+          width: 100%; }
+      .portfolio .content .image-container .image-vertical {
+        position: relative;
+        width: 50%;
+        padding: 2.5px 5px;
+        height: 100%; }
+        .portfolio .content .image-container .image-vertical img {
+          max-height: 100%;
+          max-width: 100%;
+          width: 100%; }
+        @media screen and (max-width: 740px) {
+          .portfolio .content .image-container .image-vertical {
             width: 100%; } }
 
 .section-two {

@@ -26,7 +26,7 @@ form {
   flex-wrap: wrap;
   label {
     flex: 0;
-    flex-basis: 20%;
+    flex-basis: 30%;
     color: $grey;
     margin-top: 20px;
     font-size: .8em;
@@ -34,6 +34,15 @@ form {
     text-indent: 10px;
     text-align: left;
   }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    border-color: $t-grey;
+    border-style: solid;
+    border-width: 1px;
+}
   input, select, button, textarea {
     font-family: 'Raleway', sans-serif;
     margin: 1%;
@@ -43,9 +52,10 @@ form {
     font-size: .8em;
     text-indent: 10px;
     color: lighten($grey, 30%);
-    &:focus {
+    &:focus, &:active {
       outline: none;
       border: 1px solid $light-grey;
+      background: none;
     }
     @media screen and #{$md-break} {
       flex-basis: 100%;
