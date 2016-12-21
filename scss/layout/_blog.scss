@@ -33,8 +33,6 @@
       }
     }
     .image-container {
-      display: flex;
-      flex-wrap: wrap;
       .image {
         display: flex;
         align-items: center;
@@ -72,9 +70,7 @@
     width: 90%;
     height: 80%;
     background: $t-white-2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @extend %absolute-center;
     z-index: 3;
     opacity: 0;
     transition: opacity ease-in-out 500ms;

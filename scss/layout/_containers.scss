@@ -24,7 +24,6 @@ body {
 }
 .container {
   width: 100%;
-  background: red;
   background: $background;
   padding-top: 1px;
   margin-top: -1px;
@@ -45,5 +44,9 @@ body {
   text-align: center;
   @media screen and #{$md-break} {
     width: 100%;
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

@@ -1,10 +1,7 @@
-.blog-post {
-  max-width: 1400px;
+.container {
+  max-width: $max-width;
   margin: 0 auto;
-  overflow: auto;
-
   .content {
-    margin-top: 50px;
     max-width: 100%;
     top: 0;
     width: 100%;
@@ -20,7 +17,7 @@
       z-index: 0;
       position: fixed;
       border: none;
-      bottom: -80px;
+      bottom: 15px;
       left: 50%;
       transform: translate(-50%,0);
       i {
@@ -53,25 +50,27 @@
         &:hover {
           color: $light-grey;
         }
-      }
-      @media screen and #{$sm-break} {
-        p {
-          display: none;
+        @media screen and #{$md-break} {
+          font-size: 1.3em;
+          margin-bottom: 0px;
         }
-        h2 {
+        @media screen and #{$sm-break} {
           font-size: 1em;
           border: none;
         }
       }
+      p {
+        @media screen and #{$sm-break} {
+          display: none;
+        }
+      }
     }
     .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      .image-horizontal {
+      .image-horizontal, .image-vertical {
         position: relative;
         width: 100%;
-        padding: 2.5px 5px;
         height: 100%;
+        padding: 2.5px 5px;
         img {
           max-height: 100%;
           max-width: 100%;
@@ -79,16 +78,7 @@
         }
       }
       .image-vertical {
-        position: relative;
         width: 50%;
-        padding: 2.5px 5px;
-        height: 100%;
-        img {
-          max-height: 100%;
-          max-width: 100%;
-          width: 100%;
-        }
-
         @media screen and #{$md-break} {
           width: 100%;
         }

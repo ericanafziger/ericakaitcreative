@@ -22,10 +22,10 @@
     .top.fixed {
       display: none;
       background: $t-white;
-      z-index: 0;
+      z-index: 5;
       position: fixed;
       border: none;
-      bottom: -80px;
+      bottom: 15px;
       left: 50%;
       transform: translate(-50%,0);
       i {

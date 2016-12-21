@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var fromBot = $(document).height()-350-$(window).height();
+  var fromBot = $(document).height()-450-$(window).height();
   // ================Scroll Top Blog Post Functionality ================//
     $(window).scroll(function() {
 

@@ -29,6 +29,11 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.container .hover-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .animate-top {
   animation: top-bar 800ms 1 both; }
 
@@ -74,7 +79,6 @@ body {
 
 .container {
   width: 100%;
-  background: red;
   background: #dadad7;
   padding-top: 1px;
   margin-top: -1px;
@@ -96,6 +100,9 @@ body {
   @media screen and (max-width: 740px) {
     .content {
       width: 100%; } }
+  .content .image-container {
+    display: flex;
+    flex-wrap: wrap; }
 
 .images img {
   position: absolute;
@@ -246,28 +253,25 @@ body {
     @media screen and (max-width: 740px) {
       .container .content .top {
         top: -30px; } }
-    .container .content .image-container {
+    .container .content .image-container .image {
       display: flex;
-      flex-wrap: wrap; }
-      .container .content .image-container .image {
-        display: flex;
-        align-items: center;
-        position: relative;
-        justify-content: center;
-        width: 33.33%;
-        padding: 3px 5px;
-        height: 100%; }
-        .container .content .image-container .image img {
-          max-height: 100%;
-          max-width: 100%;
-          width: 600px;
-          object-fit: cover; }
-        @media screen and (max-width: 950px) {
-          .container .content .image-container .image {
-            width: 50%; } }
-        @media screen and (max-width: 740px) {
-          .container .content .image-container .image {
-            width: 100%; } }
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      width: 33.33%;
+      padding: 3px 5px;
+      height: 100%; }
+      .container .content .image-container .image img {
+        max-height: 100%;
+        max-width: 100%;
+        width: 600px;
+        object-fit: cover; }
+      @media screen and (max-width: 950px) {
+        .container .content .image-container .image {
+          width: 50%; } }
+      @media screen and (max-width: 740px) {
+        .container .content .image-container .image {
+          width: 100%; } }
 
 .container .hover-text {
   position: absolute;
@@ -280,9 +284,6 @@ body {
   width: 90%;
   height: 80%;
   background: rgba(255, 255, 255, 0.85);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
   opacity: 0;
   transition: opacity ease-in-out 500ms; }
@@ -315,8 +316,7 @@ body {
 .contact {
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
-  background: red; }
+  overflow: auto; }
   .contact .content {
     margin-top: 150px;
     padding: 0;
@@ -394,81 +394,74 @@ form {
       background: #555;
       color: white; }
 
-.blog-post {
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow: auto; }
-  .blog-post .content {
-    margin-top: 50px;
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .container .content {
     max-width: 100%;
     top: 0;
     width: 100%; }
-    .blog-post .content .top.normal {
+    .container .content .top.normal {
       margin: 20px auto; }
-    .blog-post .content a {
+    .container .content a {
       text-decoration: none; }
-    .blog-post .content .top.fixed {
+    .container .content .top.fixed {
       display: none;
       background: rgba(255, 255, 255, 0.6);
       z-index: 0;
       position: fixed;
       border: none;
-      bottom: -80px;
+      bottom: 15px;
       left: 50%;
       transform: translate(-50%, 0); }
-      .blog-post .content .top.fixed i {
+      .container .content .top.fixed i {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%); }
-    .blog-post .content .text {
+    .container .content .text {
       margin: 0 auto;
       max-width: 1100px;
       padding: 35px; }
-      .blog-post .content .text h4 {
+      .container .content .text h4 {
         margin-bottom: 15px; }
-      .blog-post .content .text h5 {
+      .container .content .text h5 {
         margin-bottom: 10px; }
-      .blog-post .content .text p {
+      .container .content .text p {
         margin-bottom: 0px; }
-    .blog-post .content .prev-next {
+    .container .content .prev-next {
       width: 50%;
       position: relative;
       margin-top: 40px; }
-      .blog-post .content .prev-next h2 {
+      .container .content .prev-next h2 {
         white-space: nowrap;
         font-family: serif; }
-        .blog-post .content .prev-next h2:hover {
+        .container .content .prev-next h2:hover {
           color: #868686; }
-      @media screen and (max-width: 540px) {
-        .blog-post .content .prev-next p {
-          display: none; }
-        .blog-post .content .prev-next h2 {
-          font-size: 1em;
-          border: none; } }
-    .blog-post .content .image-container {
-      display: flex;
-      flex-wrap: wrap; }
-      .blog-post .content .image-container .image-horizontal {
-        position: relative;
-        width: 100%;
-        padding: 2.5px 5px;
-        height: 100%; }
-        .blog-post .content .image-container .image-horizontal img {
-          max-height: 100%;
-          max-width: 100%;
-          width: 100%; }
-      .blog-post .content .image-container .image-vertical {
-        position: relative;
-        width: 50%;
-        padding: 2.5px 5px;
-        height: 100%; }
-        .blog-post .content .image-container .image-vertical img {
-          max-height: 100%;
-          max-width: 100%;
-          width: 100%; }
         @media screen and (max-width: 740px) {
-          .blog-post .content .image-container .image-vertical {
-            width: 100%; } }
+          .container .content .prev-next h2 {
+            font-size: 1.3em;
+            margin-bottom: 0px; } }
+        @media screen and (max-width: 540px) {
+          .container .content .prev-next h2 {
+            font-size: 1em;
+            border: none; } }
+      @media screen and (max-width: 540px) {
+        .container .content .prev-next p {
+          display: none; } }
+    .container .content .image-container .image-horizontal, .container .content .image-container .image-vertical {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 2.5px 5px; }
+      .container .content .image-container .image-horizontal img, .container .content .image-container .image-vertical img {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%; }
+    .container .content .image-container .image-vertical {
+      width: 50%; }
+      @media screen and (max-width: 740px) {
+        .container .content .image-container .image-vertical {
+          width: 100%; } }
 
 .portfolio {
   max-width: 1400px;
@@ -489,10 +482,10 @@ form {
     .portfolio .content .top.fixed {
       display: none;
       background: rgba(255, 255, 255, 0.6);
-      z-index: 0;
+      z-index: 5;
       position: fixed;
       border: none;
-      bottom: -80px;
+      bottom: 15px;
       left: 50%;
       transform: translate(-50%, 0); }
       .portfolio .content .top.fixed i {
