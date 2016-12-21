@@ -1,15 +1,13 @@
-.blog {
-  overflow: auto;
+.container {
+  background: $white;
  .content {
-   height: auto;
-   top: 0;
-   margin-top: 100px;
-    width: 100%;
-    max-width: 1400px;
-    padding: 1% 0 5% 0;
-    @media screen and #{$md-break} {
-      padding-top: 0;
-    }
+   min-height: 78vh;
+   max-width: 1400px;
+   padding: 1% 0 1% 0;
+   width: 100%;
+   @media screen and #{$md-break} {
+     padding-top: 0;
+   }
     h2 {
       margin: 20px auto;
       width: auto;
@@ -17,7 +15,7 @@
       font-family: serif;
       border-bottom: none;
       @media screen and #{$md-break} {
-        margin-top: 0;
+      margin-top: 0;
       }
     }
     h4 {
@@ -49,6 +47,10 @@
           max-height: 100%;
           max-width: 100%;
           width: 600px;
+          object-fit: cover;
+        }
+        @media screen and #{$lg-break} {
+          width: 50%;
         }
         @media screen and #{$md-break} {
           width: 100%;
@@ -58,7 +60,7 @@
   }
 
 }
-.blog {
+.container {
   .hover-text {
     position: absolute;
     display: flex;
