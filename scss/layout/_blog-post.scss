@@ -46,6 +46,7 @@
       position: relative;
       margin-top: 40px;
       h2 {
+        white-space: nowrap;
         font-family: serif;
         &:hover {
           color: $light-grey;

@@ -341,6 +341,7 @@ body {
       position: relative;
       margin-top: 40px; }
       .blog-post .content .prev-next h2 {
+        white-space: nowrap;
         font-family: serif; }
         .blog-post .content .prev-next h2:hover {
           color: #868686; }
