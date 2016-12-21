@@ -83,11 +83,11 @@
 
 .side-nav {
   padding: 40px;
-  position: fixed;
+  position: absolute;
   height: 100vh;
   left: -300px;
   z-index: 6;
-  width: 300px;
+  width: 80%;
   color: $grey;
   background: $white;
   transition: left ease-in-out 200ms;
@@ -161,6 +161,3 @@
     }
   }
 }
-
-
-//====================== Nav for About Page =====================//
