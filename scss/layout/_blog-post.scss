@@ -45,8 +45,11 @@
       width: 50%;
       position: relative;
       margin-top: 40px;
-      h2:hover {
-        color: $light-grey;
+      h2 {
+        font-family: serif;
+        &:hover {
+          color: $light-grey;
+        }
       }
       @media screen and #{$sm-break} {
         p {

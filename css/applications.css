@@ -340,8 +340,10 @@ body {
       width: 50%;
       position: relative;
       margin-top: 40px; }
-      .blog-post .content .prev-next h2:hover {
-        color: #868686; }
+      .blog-post .content .prev-next h2 {
+        font-family: serif; }
+        .blog-post .content .prev-next h2:hover {
+          color: #868686; }
       @media screen and (max-width: 540px) {
         .blog-post .content .prev-next p {
           display: none; }
