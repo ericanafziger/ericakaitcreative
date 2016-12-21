@@ -1,0 +1,21 @@
+form {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  input, select, button {
+    margin: 1%;
+    flex:1;
+    flex-basis: 40%;
+    height: 40px;
+    font-size: .8em;
+    text-indent: 10px;
+    color: lighten($grey, 30%);
+  }
+  select {
+    background: none;
+    border: none;
+    outline: 1px solid $t-grey;
+    color: lighten($grey, 30%);
+  }
+}

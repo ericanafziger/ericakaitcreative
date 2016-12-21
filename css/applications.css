@@ -302,6 +302,25 @@ body {
   cursor: pointer;
   opacity: 1; }
 
+form {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap; }
+  form input, form select, form button {
+    margin: 1%;
+    flex: 1;
+    flex-basis: 40%;
+    height: 40px;
+    font-size: .8em;
+    text-indent: 10px;
+    color: #a2a2a2; }
+  form select {
+    background: none;
+    border: none;
+    outline: 1px solid rgba(130, 130, 130, 0.4);
+    color: #a2a2a2; }
+
 .blog-post {
   max-width: 1400px;
   margin: 0 auto; }
