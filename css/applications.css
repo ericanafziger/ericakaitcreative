@@ -263,7 +263,6 @@ body {
     transform: translate(-50%, 0) scale(1.2); }
 
 .content h2 {
-  width: 60%;
   margin: 0 auto;
   border-bottom: 1px solid rgba(130, 130, 130, 0.4);
   padding-bottom: 15px;
@@ -513,7 +512,8 @@ form {
         @media screen and (max-width: 540px) {
           .container .content .prev-next h2 {
             font-size: 1em;
-            border: none; } }
+            border: none;
+            margin: 0; } }
       @media screen and (max-width: 540px) {
         .container .content .prev-next p {
           display: none; } }

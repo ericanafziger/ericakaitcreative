@@ -39,6 +39,7 @@
         @media screen and #{$sm-break} {
           font-size: 1em;
           border: none;
+          margin: 0;
         }
       }
       p {
