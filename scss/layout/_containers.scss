@@ -9,6 +9,9 @@ body {
   color: $white;
   overflow: auto;
   font-family: 'Raleway', sans-serif;
+  @media screen and #{$md-break} {
+    overflow-x: hidden;
+  }
 }
 .wrap {
   position: relative;

@@ -85,12 +85,17 @@ a {
   position: fixed;
   border: none;
   bottom: 15px;
+  transition: background ease-in-out 300ms;
   left: 50%;
   transform: translate(-50%, 0); }
   .top.fixed i {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%); }
+  .top.fixed:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.85);
+    transform: scale(1) translate(-50%, 0); }
 
 .top.normal {
   margin: 20px auto; }
@@ -109,6 +114,9 @@ body {
   color: white;
   overflow: auto;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 740px) {
+    body {
+      overflow-x: hidden; } }
 
 .wrap {
   position: relative;
@@ -694,31 +702,6 @@ form {
   .module:hover > .hidden-module-text i {
     transform: rotate(180deg);
     top: -30px; }
-
-.top {
-  z-index: 5;
-  color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1);
-  transition: transform ease-in-out 300ms;
-  position: relative;
-  bottom: 20%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 60px auto; }
-  @media screen and (max-width: 950px) {
-    .top {
-      margin: 80px auto; } }
-  @media screen and (max-width: 740px) {
-    .top {
-      margin: 40px auto; } }
-  .top:hover {
-    cursor: pointer;
-    transform: scale(1.2); }
 
 .nav-main {
   position: absolute;
