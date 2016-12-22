@@ -20,6 +20,7 @@
     margin-bottom: 40px;
     @media screen and #{$lg-break} {
       padding-top: 80px;
+      margin-bottom: 0;
     }
   }
   &:nth-child(2) {
@@ -58,6 +59,7 @@
     @media screen and #{$md-break} {
       width: 100%;
       margin-bottom: 1%;
+      overflow-x: visible;
     }
     img {
       max-width: 100%;
@@ -84,6 +86,10 @@
         cursor: pointer;
         border: 2px solid $t-grey;
         border-radius: 5px;
+      }
+      @media screen and #{$md-break} {
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }

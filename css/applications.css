@@ -600,7 +600,8 @@ form {
     margin-bottom: 40px; }
     @media screen and (max-width: 950px) {
       .module-container:first-of-type {
-        padding-top: 80px; } }
+        padding-top: 80px;
+        margin-bottom: 0; } }
   .module-container:nth-child(2) {
     height: 25%;
     margin-bottom: 50px; }
@@ -632,7 +633,8 @@ form {
     @media screen and (max-width: 740px) {
       .module-container .module-large {
         width: 100%;
-        margin-bottom: 1%; } }
+        margin-bottom: 1%;
+        overflow-x: visible; } }
     .module-container .module-large img {
       max-width: 100%;
       width: 100%;
@@ -657,6 +659,10 @@ form {
         cursor: pointer;
         border: 2px solid rgba(130, 130, 130, 0.4);
         border-radius: 5px; }
+      @media screen and (max-width: 740px) {
+        .module-container .module-large .module-text {
+          top: 50%;
+          transform: translate(-50%, -50%); } }
 
 .line {
   position: absolute;
