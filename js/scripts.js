@@ -55,6 +55,24 @@ $(".menu-bars").click(function() {
   var totalImages = $(".images").children().length; // # of total slideshow images
   var imageCounter = $(".images").children().length; // keeps track of current image
 
+    setInterval(function() {
+    var photoNumber = parseInt($(".images .active").attr('class')); // active photo
+    $(".images img").removeClass("active");
+    if (photoNumber < totalImages) {
+      imageCounter = photoNumber + 1;
+      $(".images img:nth-child("+imageCounter+")").addClass("active");
+    } else if (photoNumber === totalImages) {
+      imageCounter = 1;
+      $(".images img:nth-child("+imageCounter+")").addClass("active");
+    } else {
+      imageCounter += 1;
+      $(".images img:nth-child("+imageCounter+")").addClass("active");
+    }
+    photoNumber += 1;
+    $(".circles i").removeClass("fa-circle");
+    $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+  }, 6000);
+
   $(".arrows .fa-angle-left").click(function(){
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");
