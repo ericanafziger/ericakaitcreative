@@ -42,7 +42,7 @@ body {
   padding-top: 1px;
   margin-top: -1px;
   position: relative;
-  z-index: 7;
+  z-index: 1;
   @media screen and #{$md-break} {
     background: $white;
   }

@@ -140,7 +140,7 @@ body {
   padding-top: 1px;
   margin-top: -1px;
   position: relative;
-  z-index: 7; }
+  z-index: 1; }
   @media screen and (max-width: 740px) {
     .container {
       background: white; } }
