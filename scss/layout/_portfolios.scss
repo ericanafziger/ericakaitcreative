@@ -14,26 +14,6 @@
     a {
       text-decoration: none;
     }
-    .top.normal {
-      @media screen and #{$md-break} {
-        top: -30px;
-      }
-    }
-    .top.fixed {
-      display: none;
-      background: $t-white;
-      z-index: 5;
-      position: fixed;
-      border: none;
-      bottom: 15px;
-      left: 50%;
-      transform: translate(-50%,0);
-      i {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
-    }
     .text {
       margin: 0 auto;
       max-width: $max-width;

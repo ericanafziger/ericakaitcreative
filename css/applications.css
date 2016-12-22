@@ -54,6 +54,25 @@ a {
   100% {
     transform: rotate(-45deg);
     top: -8px; } }
+.top.fixed {
+  display: none;
+  background: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  border: none;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  .top.fixed i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.top.normal {
+  margin: 20px auto; }
+  @media screen and (max-width: 740px) {
+    .top.normal {
+      top: -30px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -401,23 +420,8 @@ form {
     max-width: 100%;
     top: 0;
     width: 100%; }
-    .container .content .top.normal {
-      margin: 20px auto; }
     .container .content a {
       text-decoration: none; }
-    .container .content .top.fixed {
-      display: none;
-      background: rgba(255, 255, 255, 0.6);
-      z-index: 0;
-      position: fixed;
-      border: none;
-      bottom: 15px;
-      left: 50%;
-      transform: translate(-50%, 0); }
-      .container .content .top.fixed i {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%); }
     .container .content .text {
       margin: 0 auto;
       max-width: 1100px;
@@ -476,22 +480,6 @@ form {
       margin: 20px auto; }
     .portfolio .content a {
       text-decoration: none; }
-    @media screen and (max-width: 740px) {
-      .portfolio .content .top.normal {
-        top: -30px; } }
-    .portfolio .content .top.fixed {
-      display: none;
-      background: rgba(255, 255, 255, 0.6);
-      z-index: 5;
-      position: fixed;
-      border: none;
-      bottom: 15px;
-      left: 50%;
-      transform: translate(-50%, 0); }
-      .portfolio .content .top.fixed i {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%); }
     .portfolio .content .text {
       margin: 0 auto;
       max-width: 1100px;

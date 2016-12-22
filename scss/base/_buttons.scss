@@ -1,0 +1,21 @@
+.top.fixed {
+  display: none;
+  background: $t-white;
+  position: fixed;
+  border: none;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%,0);
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.top.normal {
+  margin: 20px auto;
+  @media screen and #{$md-break} {
+    top: -30px;
+  }
+}

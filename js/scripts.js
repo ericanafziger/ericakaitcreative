@@ -1,9 +1,17 @@
 $(document).ready(function(){
-  var fromBot = $(document).height()-450-$(window).height();
+
+  // ================Recalculates window height on resize================//
+  $(window).resize(function() {
+   height();
+ });
+ function height () {
+    var fromBottom = $(document).height()-400-$(window).height();
+    return fromBottom
+  }
   // ================Scroll Top Blog Post Functionality ================//
     $(window).scroll(function() {
 
-      if ($(document).scrollTop() > 350 && $(document).scrollTop() < fromBot) {
+      if ($(document).scrollTop() > 350 && $(document).scrollTop() < height()) {
         $(".top.fixed").fadeIn(300);
       } else {
         $(".top.fixed").fadeOut(300);

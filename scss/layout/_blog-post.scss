@@ -5,26 +5,8 @@
     max-width: 100%;
     top: 0;
     width: 100%;
-    .top.normal {
-      margin: 20px auto;
-    }
     a {
       text-decoration: none;
-    }
-    .top.fixed {
-      display: none;
-      background: $t-white;
-      z-index: 0;
-      position: fixed;
-      border: none;
-      bottom: 15px;
-      left: 50%;
-      transform: translate(-50%,0);
-      i {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
     }
     .text {
       margin: 0 auto;
