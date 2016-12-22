@@ -1,5 +1,6 @@
-.contact {
+.contact-about {
   max-width: $max-width;
+  background: $white;
   margin: 0 auto;
   overflow: auto;
   .content {
@@ -26,7 +27,6 @@
     }
     .top {
       margin: 50px auto;
-      // top: -80px;
     }
   }
 }

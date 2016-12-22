@@ -389,30 +389,31 @@ body {
   cursor: pointer;
   opacity: 1; }
 
-.contact {
+.contact-about {
   max-width: 1100px;
+  background: white;
   margin: 0 auto;
   overflow: auto; }
-  .contact .content {
+  .contact-about .content {
     padding: 0;
     max-width: 800px; }
     @media screen and (max-width: 740px) {
-      .contact .content {
+      .contact-about .content {
         max-width: 100%;
         padding: 0 30px; } }
-    .contact .content h2 {
+    .contact-about .content h2 {
       margin-top: 20px;
       font-size: 2em;
       font-family: serif; }
-    .contact .content h4 {
+    .contact-about .content h4 {
       opacity: 1;
       transition: opacity ease-in-out 200ms; }
       @media screen and (max-width: 740px) {
-        .contact .content h4 {
+        .contact-about .content h4 {
           opacity: 0; } }
-    .contact .content img {
+    .contact-about .content img {
       max-width: 100%; }
-    .contact .content .top {
+    .contact-about .content .top {
       margin: 50px auto; }
 
 form {
