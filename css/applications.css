@@ -122,7 +122,6 @@ body {
     .wrap.pull {
       z-index: 6;
       box-shadow: 0px 0px 10px #555;
-      border-left: 1px solid #868686;
       left: 80%;
       overflow: hidden; } }
   @media screen and (max-width: 740px) {
