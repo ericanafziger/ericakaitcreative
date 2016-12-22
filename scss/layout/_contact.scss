@@ -3,24 +3,30 @@
   margin: 0 auto;
   overflow: auto;
   .content {
-    margin-top: 150px;
     padding: 0;
     max-width: 800px;
     @media screen and #{$md-break} {
       max-width: 100%;
+      padding: 0 30px;
     }
     h2 {
       margin-top: 20px;
       font-size: 2em;
       font-family: serif;
     }
+    h4 {
+      opacity: 1;
+      transition: opacity ease-in-out 200ms;
+      @media screen and #{$md-break} {
+        opacity: 0;
+      }
+    }
     img {
       max-width: 100%;
-      margin-bottom: 50px;
     }
     .top {
-      margin: 100px auto;
-      top: -80px;
+      margin: 50px auto;
+      // top: -80px;
     }
   }
 }
