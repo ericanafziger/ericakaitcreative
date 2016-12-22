@@ -21,7 +21,6 @@ body {
   &.pull {
     @media screen and #{$md-break} {
       z-index: 6;
-      opacity: 0.7;
       box-shadow: 0px 0px 10px $grey;
       border-left: 1px solid $light-grey;
       left: 80%;
