@@ -171,7 +171,7 @@ body {
   width: 100%;
   display: block;
   object-fit: cover;
-  transition: opacity ease-in-out 2s;
+  transition: opacity ease-in-out 1s;
   opacity: 0; }
 .images .active {
   opacity: 1; }

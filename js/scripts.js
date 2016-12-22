@@ -71,7 +71,7 @@ $(".menu-bars").click(function() {
     photoNumber += 1;
     $(".circles i").removeClass("fa-circle");
     $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
-  }, 6000); }
+  }, 5000); }
 
   function stopSlideshow() { clearInterval(interval)}
 
