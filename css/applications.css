@@ -45,14 +45,14 @@ a {
 
 @keyframes top-bar {
   100% {
-    transform: rotate(45deg);
+    transform: rotate(45deg) scale(0.8);
     top: 8px; } }
 @keyframes middle-bar {
   100% {
     opacity: 0; } }
 @keyframes bottom-bar {
   100% {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(0.8);
     top: -8px; } }
 .top {
   z-index: 5;
@@ -330,7 +330,8 @@ body {
           width: 50%; } }
       @media screen and (max-width: 740px) {
         .container .content .image-container .image {
-          width: 100%; } }
+          width: 100%;
+          overflow: hidden; } }
 
 .container .hover-text {
   position: absolute;
@@ -507,7 +508,8 @@ form {
       .container .content .image-container .image-horizontal img, .container .content .image-container .image-vertical img {
         max-height: 100%;
         max-width: 100%;
-        width: 100%; }
+        width: 100%;
+        object-fit: cover; }
     .container .content .image-container .image-vertical {
       width: 50%; }
       @media screen and (max-width: 740px) {
@@ -724,7 +726,8 @@ form {
   width: 100%; }
   @media screen and (max-width: 740px) {
     .nav-main {
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      overflow: hidden; } }
   .nav-main .title {
     display: none;
     width: 0px;
@@ -739,7 +742,7 @@ form {
       cursor: pointer; }
     .nav-main .menu-bars .nav-line {
       opacity: 1;
-      transform: rotate(0);
+      transform: rotate(0) scale(1);
       top: 0;
       transition: all ease-in-out 200ms;
       position: relative;

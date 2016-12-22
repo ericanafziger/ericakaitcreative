@@ -10,6 +10,7 @@
   width: 100%;
   @media screen and #{$md-break} {
     justify-content: flex-start;
+    overflow: hidden;
   }
   .title {
     display: none;
@@ -27,7 +28,7 @@
     }
     .nav-line {
       opacity: 1;
-      transform: rotate(0);
+      transform: rotate(0) scale(1);;
       top: 0;
       transition: all ease-in-out 200ms;
       position: relative;
