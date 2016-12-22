@@ -93,8 +93,10 @@
   background: $white;
   transition: left ease-in-out 200ms;
   &.push {
+    @media screen and #{$md-break} {
     left: 0;
     width: 80%;
+    }
   }
   li {
     list-style: none;
@@ -129,9 +131,6 @@
 
 //====================== Dropdown Menu =====================//
 .dropdown {
-  &:hover {
-    // background: lighten($light-grey, 35%);
-  }
   &:hover > ul.dropdown-menu {
     display: block;
   }
