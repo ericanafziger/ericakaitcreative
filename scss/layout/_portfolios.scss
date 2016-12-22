@@ -21,6 +21,13 @@
       padding: 35px;
       h4 {
         margin-bottom: 15px;
+        opacity: 1;
+        transition: opacity ease-in-out 200ms;
+        &:first-child {
+          @media screen and #{$md-break} {
+            opacity: 0;
+          }    
+        }
       }
       h5 {
         margin-bottom: 10px;

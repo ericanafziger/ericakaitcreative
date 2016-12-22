@@ -20,8 +20,17 @@
     }
     h4 {
       font-weight: bold;
-      @media screen and #{$md-break} {
-        display: none;
+      opacity: 1;
+      transition: opacity ease-in-out 200ms;
+      &:first-child {
+        @media screen and #{$md-break} {
+          opacity: 0;
+        }
+      }
+      &:nth-child(n+2) {
+        @media screen and #{$md-break} {
+          display: none;
+        }
       }
     }
     a {
