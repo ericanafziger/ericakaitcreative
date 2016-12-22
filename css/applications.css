@@ -54,6 +54,31 @@ a {
   100% {
     transform: rotate(-45deg);
     top: -8px; } }
+.top {
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform ease-in-out 300ms;
+  position: relative;
+  bottom: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 60px auto; }
+  @media screen and (max-width: 950px) {
+    .top {
+      margin: 80px auto; } }
+  @media screen and (max-width: 740px) {
+    .top {
+      margin: 40px auto; } }
+  .top:hover {
+    cursor: pointer;
+    transform: scale(1.2); }
+
 .top.fixed {
   display: none;
   background: rgba(255, 255, 255, 0.6);
@@ -95,6 +120,10 @@ body {
     box-shadow: 0px 0px 10px #555;
     border-left: 1px solid #868686;
     left: 80%; }
+
+.home-container {
+  position: relative;
+  height: 100vh; }
 
 .container {
   width: 100%;
