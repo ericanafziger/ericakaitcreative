@@ -372,6 +372,10 @@ body {
     @media screen and (max-width: 740px) {
       .contact .content {
         max-width: 100%; } }
+    .contact .content h2 {
+      margin-top: 20px;
+      font-size: 2em;
+      font-family: serif; }
     .contact .content img {
       max-width: 100%;
       margin-bottom: 50px; }

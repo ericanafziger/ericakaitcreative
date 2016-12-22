@@ -9,6 +9,11 @@
     @media screen and #{$md-break} {
       max-width: 100%;
     }
+    h2 {
+      margin-top: 20px;
+      font-size: 2em;
+      font-family: serif;
+    }
     img {
       max-width: 100%;
       margin-bottom: 50px;
