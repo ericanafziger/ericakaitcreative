@@ -534,14 +534,15 @@ form {
           width: 100%; } }
 
 .portfolio {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: auto; }
   .portfolio .content {
     top: 0;
     margin-top: 50px;
     max-width: 100%;
-    width: 100%; }
+    width: 100%;
+    padding: 0 40px; }
     .portfolio .content .top.normal {
       margin: 20px auto; }
     .portfolio .content a {

@@ -1,5 +1,5 @@
 .portfolio {
-  max-width: 1400px;
+  max-width: $max-width;
   margin: 0 auto;
   overflow: auto;
 
@@ -8,6 +8,7 @@
     margin-top: 50px;
     max-width: 100%;
     width: 100%;
+    padding: 0 40px;
     .top.normal {
       margin: 20px auto;
     }
