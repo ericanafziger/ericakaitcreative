@@ -54,8 +54,8 @@ $(".menu-bars").click(function() {
 
   var totalImages = $(".images").children().length; // # of total slideshow images
   var imageCounter = $(".images").children().length; // keeps track of current image
-
-    setInterval(function() {
+  var interval = null;
+    function startSlideshow() { interval = setInterval(function() {
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".images img").removeClass("active");
     if (photoNumber < totalImages) {
@@ -71,9 +71,15 @@ $(".menu-bars").click(function() {
     photoNumber += 1;
     $(".circles i").removeClass("fa-circle");
     $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
-  }, 6000);
+  }, 6000); }
+
+  function stopSlideshow() { clearInterval(interval)}
+
+  startSlideshow();
 
   $(".arrows .fa-angle-left").click(function(){
+    debugger;
+    stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");
     $(".images img").removeClass("active");
@@ -85,9 +91,11 @@ $(".menu-bars").click(function() {
       $(".images img:nth-child("+imageCounter+")").addClass("active");
     }
     $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+    startSlideshow();
   });
 
   $(".arrows .fa-angle-right").click(function(){
+    stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");
     $(".images img").removeClass("active");
@@ -102,14 +110,17 @@ $(".menu-bars").click(function() {
       $(".images img:nth-child("+imageCounter+")").addClass("active");
     }
     $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+    startSlideshow();
   });
   $(".circles i").click(function(){
+    stopSlideshow();
     var circleNumber = $(this).attr('class').replace(/[^\d]/g, ""); // clicked circle
     $(".circles i").removeClass("fa-circle");
     $(this).addClass("fa-circle");
     $(".images img").removeClass("active");
     $(".images img:nth-child("+circleNumber+")").addClass("active");
     imageCounter = circleNumber;
+    startSlideshow();
   });
 
 }); //end of document ready
