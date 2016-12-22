@@ -97,6 +97,9 @@
       padding: 10px;
       border-top: 1px solid $t-grey;
       color: $grey;
+      @media screen and #{$md-break} {
+        display: none;
+      }
     }
   }
 }
