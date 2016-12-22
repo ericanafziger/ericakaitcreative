@@ -1,0 +1,38 @@
+.image-container {
+  .package-text {
+    padding: 30px;
+    width: 50%;
+    @media screen and #{$lg-break} {
+      padding: 0px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    h3:first-child {
+      text-align: center;
+    }
+    h3, ul, p {
+      color: $grey;
+      text-align: justify;
+    }
+    h3 {
+      color: $black;
+      padding-top: 10px;
+    }
+    p, ul {
+      padding-top: 12px;
+    }
+    li {
+      font-size: 0.9em;
+      padding: 5px;
+      list-style-type: none;
+      &:nth-child(odd) {
+        background: lighten($t-grey, 35%);
+      }
+    }
+    .highlight {
+      color: $black;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+}

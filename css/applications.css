@@ -76,8 +76,7 @@ a {
     .top {
       margin: 40px auto; } }
   .top:hover {
-    cursor: pointer;
-    transform: scale(1.2); }
+    cursor: pointer; }
 
 .top.fixed {
   display: none;
@@ -92,10 +91,6 @@ a {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%); }
-  .top.fixed:hover {
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.85);
-    transform: scale(1) translate(-50%, 0); }
 
 .top.normal {
   margin: 20px auto; }
@@ -737,6 +732,35 @@ form {
   .module:hover > .hidden-module-text i {
     transform: rotate(180deg);
     top: -30px; }
+
+.image-container .package-text {
+  padding: 30px;
+  width: 50%; }
+  @media screen and (max-width: 950px) {
+    .image-container .package-text {
+      padding: 0px;
+      padding-bottom: 20px;
+      width: 100%; } }
+  .image-container .package-text h3:first-child {
+    text-align: center; }
+  .image-container .package-text h3, .image-container .package-text ul, .image-container .package-text p {
+    color: #555;
+    text-align: justify; }
+  .image-container .package-text h3 {
+    color: black;
+    padding-top: 10px; }
+  .image-container .package-text p, .image-container .package-text ul {
+    padding-top: 12px; }
+  .image-container .package-text li {
+    font-size: 0.9em;
+    padding: 5px;
+    list-style-type: none; }
+    .image-container .package-text li:nth-child(odd) {
+      background: rgba(219, 219, 219, 0.4); }
+  .image-container .package-text .highlight {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em; }
 
 .nav-main {
   position: absolute;

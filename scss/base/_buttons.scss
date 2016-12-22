@@ -21,7 +21,7 @@
   }
   &:hover {
     cursor: pointer;
-    transform:scale(1.2);
+  //   transform:scale(1.2);
   }
 }
 .top.fixed {
@@ -38,11 +38,11 @@
     top: 50%;
     transform: translate(-50%,-50%);
   }
-  &:hover {
-    cursor: pointer;
-    background: $t-white-2;
-    transform: scale(1) translate(-50%, 0);
-  }
+  // &:hover {
+  //   cursor: pointer;
+  //   background: $t-white-2;
+  //   transform: scale(1) translate(-50%, 0);
+  // }
 }
 
 .top.normal {
