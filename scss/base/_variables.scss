@@ -13,6 +13,6 @@ $forest: rgb(60, 62, 22);
 //=================Max Width===================//
 $max-width: 1100px;
 //=================Media Queries===================//
-$lg-break: '(max-width: 950px)';
+$lg-break: '(max-width: 950px), (orientation: landscape)';
 $md-break: '(max-width: 740px)';
 $sm-break: '(max-width: 540px)';

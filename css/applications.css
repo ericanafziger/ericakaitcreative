@@ -69,7 +69,7 @@ a {
   height: 50px;
   border-radius: 50%;
   margin: 60px auto; }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 950px), (orientation: landscape) {
     .top {
       margin: 80px auto; } }
   @media screen and (max-width: 740px) {
@@ -322,7 +322,7 @@ body {
         max-width: 100%;
         width: 600px;
         object-fit: cover; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 950px), (orientation: landscape) {
         .container .content .image-container .image {
           width: 50%; } }
       @media screen and (max-width: 740px) {
@@ -590,7 +590,7 @@ form {
   .module-container:first-of-type {
     padding-top: 170px;
     margin-bottom: 40px; }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 950px), (orientation: landscape) {
       .module-container:first-of-type {
         padding-top: 80px; } }
   .module-container:nth-child(2) {
@@ -601,7 +601,7 @@ form {
     position: relative;
     height: 350px;
     width: 32.5%; }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 950px), (orientation: landscape) {
       .module-container .module {
         margin-bottom: 1%;
         width: 49.45%;
@@ -609,7 +609,7 @@ form {
     @media screen and (max-width: 740px) {
       .module-container .module {
         width: 100%; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 950px), (orientation: landscape) {
       .module-container .module:last-child {
         width: 100%; } }
     .module-container .module img {
@@ -656,6 +656,9 @@ form {
   top: 51.5%;
   height: 1px;
   background: #555; }
+  @media screen and (max-width: 740px) {
+    .line {
+      display: none; } }
 
 .hidden-module-text {
   border-radius: 5px;
