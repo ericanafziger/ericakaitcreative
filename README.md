@@ -1,11 +1,10 @@
-# _Erica Kait Creative Website
+# _Erica Kait Creative Website_
 
-#### _Photography Portfolio Website, 12.22.2016_
+#### _Photography Portfolio Website, December 22, 2016_
 
 #### By _**Erica Nafziger**_
 
 ![Site Preview](img/screen-shot.png)
-
 
 ## Setup/Installation Requirements
 
@@ -18,10 +17,18 @@ _This app is a portfolio website for Erica Kait Creative. It is designed to disp
 
 ## Technologies Used
 
-_Javascript/Jquery/Css/SCSS/Html/Github_
+_Javascript/Jquery/Css/Sass/Html/Github_
+
+## Support and contact details
+
+_garbererica@gmail.com_
+
+## Known Bugs
+
+_No known bugs at this time._
 
 ### License
 
-*Open Source*
+*This app is licensed under the MIT license.*
 
 Copyright (c) 2016 **_Erica Nafziger_**
