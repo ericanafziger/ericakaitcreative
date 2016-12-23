@@ -154,6 +154,7 @@ body {
   text-align: center; }
   @media screen and (max-width: 740px) {
     .content {
+      margin-top: 55px;
       width: 100%; } }
   .content .image-container {
     display: flex;
@@ -550,6 +551,9 @@ form {
     padding: 0 40px; }
     .portfolio .content .top.normal {
       margin: 20px auto; }
+    .portfolio .content h2 {
+      font-family: serif;
+      font-size: 2em; }
     .portfolio .content a {
       text-decoration: none; }
     .portfolio .content .text {

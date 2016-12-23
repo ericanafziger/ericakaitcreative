@@ -55,6 +55,7 @@ body {
   background: $white;
   text-align: center;
   @media screen and #{$md-break} {
+    margin-top: 55px;
     width: 100%;
   }
   .image-container {

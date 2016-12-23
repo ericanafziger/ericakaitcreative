@@ -12,6 +12,10 @@
     .top.normal {
       margin: 20px auto;
     }
+    h2 {
+      font-family: serif;
+      font-size: 2em;
+    }
     a {
       text-decoration: none;
     }
@@ -26,7 +30,7 @@
         &:first-child {
           @media screen and #{$md-break} {
             opacity: 0;
-          }    
+          }
         }
       }
       h5 {
