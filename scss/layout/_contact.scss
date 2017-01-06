@@ -80,6 +80,8 @@ form {
     border: none;
     outline: 1px solid $t-grey;
     color: lighten($grey, 30%);
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
   }
   textarea {
     padding-top: 10px;

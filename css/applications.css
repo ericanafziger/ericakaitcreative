@@ -464,7 +464,9 @@ form {
     flex-basis: 100%;
     border: none;
     outline: 1px solid rgba(130, 130, 130, 0.4);
-    color: #a2a2a2; }
+    color: #a2a2a2;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px; }
   form textarea {
     padding-top: 10px;
     height: 100px;
