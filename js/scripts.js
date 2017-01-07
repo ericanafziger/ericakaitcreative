@@ -76,8 +76,7 @@ $(".menu-bars").click(function() {
   function stopSlideshow() { clearInterval(interval)}
 
   startSlideshow();
-
-  $(".arrows .fa-angle-left").click(function(){
+  $('.left-controll').click(function(){
     debugger;
     stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
@@ -94,7 +93,7 @@ $(".menu-bars").click(function() {
     startSlideshow();
   });
 
-  $(".arrows .fa-angle-right").click(function(){
+  $('.right-controll').click(function(){
     stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");

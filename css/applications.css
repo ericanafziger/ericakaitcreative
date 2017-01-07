@@ -209,25 +209,47 @@ body {
     height: 35px;
     width: 220px; }
 
-.arrows {
+.large-screen-arrows {
   position: absolute;
   display: flex;
   justify-content: space-between;
   height: 30px;
   top: 115px; }
-  .arrows i {
+  .large-screen-arrows i {
     margin: 0 5px;
     padding: 20px;
     opacity: 0.7;
     transition: opacity 1s;
     z-index: 2; }
-    .arrows i:hover {
+    .large-screen-arrows i:hover {
       opacity: 1;
       cursor: pointer; }
-  .arrows .fa-angle-right:before, .arrows .fa-angle-left:before {
+  .large-screen-arrows .fa-angle-right:before, .large-screen-arrows .fa-angle-left:before {
     position: absolute;
     top: 0;
     color: white; }
+
+.small-screen-arrows {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  justify-content: space-between;
+  display: none; }
+  .small-screen-arrows i {
+    margin: 0 5px;
+    font-size: 2.5em;
+    padding: 20px;
+    opacity: 0.7;
+    transition: opacity 1s;
+    z-index: 2; }
+    .small-screen-arrows i:hover {
+      opacity: 1;
+      cursor: pointer; }
+  @media screen and (max-width: 740px) {
+    .small-screen-arrows {
+      display: flex; } }
 
 .circles {
   position: absolute;
@@ -258,10 +280,14 @@ body {
   bottom: 6%;
   width: 50px;
   height: 50px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all ease-in-out 200ms; }
   .more:hover {
     cursor: pointer;
     transform: translate(-50%, 0) scale(1.2); }
+  @media screen and (max-width: 540px) {
+    .more {
+      bottom: 12%; } }
 
 .content h2 {
   margin: 0 auto;
