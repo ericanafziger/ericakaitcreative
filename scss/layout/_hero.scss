@@ -22,10 +22,11 @@
 .text-contain {
   position: absolute;
   max-width: 1400px;
-  height: 400px;
+  height: 40%;
   width: 100%;
+  // background: red;
   z-index: 3;
-  top: 45%;
+  bottom: 30px;
   left: 50%;
   transform: translate(-50%, 0);
   @media screen and #{$md-break} {
