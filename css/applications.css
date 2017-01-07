@@ -487,7 +487,7 @@ form {
       color: white; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto; }
   .container .content {
     max-width: 100%;
@@ -504,7 +504,10 @@ form {
       .container .content .text h5 {
         margin-bottom: 10px; }
       .container .content .text p {
-        margin-bottom: 0px; }
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 0px;
+        max-width: 900px; }
     .container .content .prev-next {
       width: 50%;
       position: relative;
