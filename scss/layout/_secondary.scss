@@ -88,8 +88,32 @@
         border-radius: 5px;
       }
       @media screen and #{$md-break} {
+        border-radius: 5px;
+        width: 80%;
+        height: 60%;
         top: 50%;
         transform: translate(-50%, -50%);
+        background: $t-white-2;
+        border: 2px solid white;
+        &:hover {
+          cursor: default;
+          border: inherit;
+          border: 2px solid $white;
+        }
+        h2 {
+          &:hover {
+            cursor: pointer;
+            color: $forest;
+          }
+        }
+        h5 {
+          color: $grey;
+          font-weight: 500;
+          &:hover {
+            cursor: pointer;
+            color: $forest;
+          }
+        }
       }
     }
   }

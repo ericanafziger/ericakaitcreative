@@ -728,8 +728,26 @@ form {
         border-radius: 5px; }
       @media screen and (max-width: 740px) {
         .module-container .module-large .module-text {
+          border-radius: 5px;
+          width: 80%;
+          height: 60%;
           top: 50%;
-          transform: translate(-50%, -50%); } }
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.85);
+          border: 2px solid white; }
+          .module-container .module-large .module-text:hover {
+            cursor: default;
+            border: inherit;
+            border: 2px solid white; }
+          .module-container .module-large .module-text h2:hover {
+            cursor: pointer;
+            color: #3c3e16; }
+          .module-container .module-large .module-text h5 {
+            color: #555;
+            font-weight: 500; }
+            .module-container .module-large .module-text h5:hover {
+              cursor: pointer;
+              color: #3c3e16; } }
 
 .line {
   position: absolute;
