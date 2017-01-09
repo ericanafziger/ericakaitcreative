@@ -36,11 +36,6 @@
     a {
       text-decoration: none;
     }
-    .top {
-      @media screen and #{$md-break} {
-        top: -30px;
-      }
-    }
     .image-container {
       .image {
         display: flex;
