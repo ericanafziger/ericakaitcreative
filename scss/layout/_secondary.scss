@@ -15,11 +15,13 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @media screen and #{$lg-break} {
+    width: 90%;
+  }
   &:first-of-type {
-    padding-top: 170px;
+    padding-top: 120px;
     margin-bottom: 40px;
     @media screen and #{$lg-break} {
-      padding-top: 80px;
       margin-bottom: 0;
     }
   }
@@ -34,16 +36,10 @@
     width: 32.5%;
     @media screen and #{$lg-break} {
       margin-bottom: 1%;
-      width: 49.45%;
       height: 300px;
     }
     @media screen and #{$md-break} {
       width: 100%;
-    }
-    &:last-child {
-      @media screen and #{$lg-break} {
-        width: 100%;
-      }
     }
     img {
       max-width: 100%;
@@ -86,6 +82,9 @@
         cursor: pointer;
         border: 2px solid $t-grey;
         border-radius: 5px;
+      }
+      @media screen and #{$lg-break} {
+        top: 5%;
       }
       @media screen and #{$md-break} {
         border-radius: 5px;
