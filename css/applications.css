@@ -834,6 +834,12 @@ form {
     font-weight: bold;
     font-size: 1.1em; }
 
+.view-md {
+  display: none; }
+  @media screen and (max-width: 950px) {
+    .view-md {
+      display: block; } }
+
 .nav-main {
   position: absolute;
   top: 0;

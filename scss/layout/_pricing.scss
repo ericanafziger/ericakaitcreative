@@ -36,3 +36,9 @@
     }
   }
 }
+.view-md {
+  display: none;
+  @media screen and #{$lg-break} {
+    display: block;
+  }
+}

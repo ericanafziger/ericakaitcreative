@@ -27,6 +27,20 @@ $(document).ready(function(){
       }, 1000);
   });
 
+  $(".weddings").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#weddings").offset().top,
+          behavior: 'smooth',
+      }, 1000);
+  });
+
+  $(".portraits").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#portraits").offset().top,
+          behavior: 'smooth',
+      }, 1500);
+  });
+
   $(".top").click(function() {
       $('html, body').animate({
           scrollTop: $("#top-of-page").offset().top,
