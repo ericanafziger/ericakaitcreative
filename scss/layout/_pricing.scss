@@ -17,6 +17,9 @@
     h3 {
       color: $black;
       padding-top: 10px;
+      @media screen and #{$sm-break} {
+        text-align: left;
+      }
     }
     p, ul {
       padding-top: 12px;

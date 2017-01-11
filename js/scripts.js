@@ -54,13 +54,14 @@ $(document).ready(function(){
       }, 1000);
   });
 
-// ================Menu Bars Animation ================//
+// =========================Hidden Menu==========================//
 
 $(".menu-bars").click(function() {
   $(".nav-line:nth-child(1)").toggleClass("animate-top");
   $(".nav-line:nth-child(2)").toggleClass("animate-middle");
   $(".nav-line:nth-child(3)").toggleClass("animate-bottom");
   $(".wrap").toggleClass("pull");
+  $(".wrap").toggleClass("fixed");
   $(".side-nav").toggleClass("push");
 });
 

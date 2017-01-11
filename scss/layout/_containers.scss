@@ -30,6 +30,9 @@ body {
     overflow-x: hidden;
   }
 }
+.fixed {
+  position: fixed;
+}
 .home-container {
   position: relative;
   height: 100vh;

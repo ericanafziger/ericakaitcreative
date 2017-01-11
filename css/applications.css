@@ -129,6 +129,9 @@ body {
     .wrap {
       overflow-x: hidden; } }
 
+.fixed {
+  position: fixed; }
+
 .home-container {
   position: relative;
   height: 100vh; }
@@ -822,6 +825,9 @@ form {
   .image-container .package-text h3 {
     color: black;
     padding-top: 10px; }
+    @media screen and (max-width: 540px) {
+      .image-container .package-text h3 {
+        text-align: left; } }
   .image-container .package-text p, .image-container .package-text ul {
     padding-top: 12px; }
   .image-container .package-text li {
