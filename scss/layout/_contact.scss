@@ -17,6 +17,7 @@
     }
     h4 {
       opacity: 1;
+      -webkit-transition: opacity ease-in-out 200ms;
       transition: opacity ease-in-out 200ms;
       @media screen and #{$md-break} {
         opacity: 0;
@@ -35,15 +36,22 @@
 form {
   margin: 0 auto 20px auto;
   max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   label {
-    flex: 0;
-    flex-basis: 30%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     color: $grey;
     margin-top: 20px;
     font-size: .8em;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     text-indent: 10px;
     text-align: left;
   }
@@ -51,6 +59,7 @@ form {
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
     border-color: $t-grey;
     border-style: solid;
@@ -59,8 +68,11 @@ form {
   input, select, button, textarea {
     font-family: 'Raleway', sans-serif;
     margin: 1%;
-    flex:1;
-    flex-basis: 40%;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
     height: 40px;
     font-size: .8em;
     text-indent: 10px;
@@ -71,12 +83,14 @@ form {
       background: none;
     }
     @media screen and #{$md-break} {
-      flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
     }
   }
   select {
     background: none;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     border: none;
     outline: 1px solid $t-grey;
     color: lighten($grey, 30%);
@@ -87,16 +101,19 @@ form {
     padding-top: 10px;
     height: 100px;
     max-height: 300px;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     outline: 1px solid $t-grey;
     border: none;
   }
   button {
     max-width: 200px;
     margin: 10px auto;
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
     background: none;
     border: 1px solid $t-grey;
+    -webkit-transition: background 200ms ease-in-out;
     transition: background 200ms ease-in-out;
     &:hover {
       cursor: pointer;

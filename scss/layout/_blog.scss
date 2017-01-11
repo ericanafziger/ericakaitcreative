@@ -21,6 +21,7 @@
     h4 {
       font-weight: bold;
       opacity: 1;
+      -webkit-transition: opacity ease-in-out 200ms;
       transition: opacity ease-in-out 200ms;
       &:first-child {
         @media screen and #{$md-break} {
@@ -38,10 +39,16 @@
     }
     .image-container {
       .image {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: relative;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 33.33%;
         padding: 3px 5px;
         height: 100%;
@@ -49,7 +56,8 @@
           max-height: 100%;
           max-width: 100%;
           width: 600px;
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           @media screen and #{$md-break} {
             height: 325px;
           }
@@ -71,11 +79,21 @@
 .container {
   .hover-text {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 20px;
     width: 90%;
     height: 80%;
@@ -83,9 +101,11 @@
     @extend %absolute-center;
     z-index: 3;
     opacity: 0;
+    -webkit-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
     @media screen and #{$md-break} {
-      transform: translate(0,0);
+      -webkit-transform: translate(0,0);
+              transform: translate(0,0);
       background: none;
       left: 0;
       top: auto;
@@ -93,7 +113,9 @@
       position: absolute;
       width: 100%;
       height: auto;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       opacity: 1;
     }
     @media screen and #{$sm-break} {

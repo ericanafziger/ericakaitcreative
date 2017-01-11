@@ -1,24 +1,40 @@
-//===================Menu Bars Animation=====================//
+/*===================Menu Bars Animation=====================//*/
 .animate-top {
-  animation: top-bar 800ms 1 both;
+  -webkit-animation: top-bar 800ms 1 both;
+          animation: top-bar 800ms 1 both;
 }
 .animate-middle {
-  animation: middle-bar 400ms 1 both;
+  -webkit-animation: middle-bar 400ms 1 both;
+          animation: middle-bar 400ms 1 both;
 }
 .animate-bottom {
-  animation: bottom-bar 800ms 1 both;
+  -webkit-animation: bottom-bar 800ms 1 both;
+          animation: bottom-bar 800ms 1 both;
 }
-//===================Keyframes=====================//
-@keyframes top-bar {
-  100% { transform: rotate(45deg) scale(0.8);
+/*===================Keyframes=====================//*/
+@-webkit-keyframes top-bar {
+  100% { -webkit-transform: rotate(45deg) scale(0.8); transform: rotate(45deg) scale(0.8);
     top: 8px;
   }
+}
+@keyframes top-bar {
+  100% { -webkit-transform: rotate(45deg) scale(0.8); transform: rotate(45deg) scale(0.8);
+    top: 8px;
+  }
+}
+@-webkit-keyframes middle-bar {
+  100% { opacity: 0}
 }
 @keyframes middle-bar {
   100% { opacity: 0}
 }
+@-webkit-keyframes bottom-bar {
+  100% { -webkit-transform: rotate(-45deg) scale(0.8); transform: rotate(-45deg) scale(0.8);
+         top: -8px;
+       }
+}
 @keyframes bottom-bar {
-  100% { transform: rotate(-45deg) scale(0.8);
+  100% { -webkit-transform: rotate(-45deg) scale(0.8); transform: rotate(-45deg) scale(0.8);
          top: -8px;
        }
 }

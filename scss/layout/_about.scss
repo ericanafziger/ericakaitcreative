@@ -17,6 +17,7 @@
   }
   .top {
     color: $grey;
+    -webkit-transition: color ease-in-out 100ms;
     transition: color ease-in-out 100ms;
     margin: 40px auto 0px;
     &:hover {

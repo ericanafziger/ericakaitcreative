@@ -17,6 +17,7 @@ body {
   position: relative;
   left: 0;
   top: 0;
+  -webkit-transition: left ease-in-out 200ms;
   transition: left ease-in-out 200ms;
   &.pull {
     @media screen and #{$md-break} {
@@ -63,7 +64,10 @@ body {
     width: 100%;
   }
   .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }

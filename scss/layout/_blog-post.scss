@@ -1,5 +1,5 @@
 .container {
-  max-width: 1000px; //changes max width of images on page
+  max-width: 1000px; /*changes max width of images on page*/
   margin: 0 auto;
   .content {
     max-width: 100%;
@@ -61,7 +61,8 @@
           max-height: 100%;
           max-width: 100%;
           width: 100%;
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
         }
       }
       .image-vertical {
