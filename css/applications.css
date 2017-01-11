@@ -914,6 +914,9 @@ form {
       .nav-main ul li:hover {
         cursor: pointer; }
 
+.menu-bars.shift {
+  margin-left: 3%; }
+
 .bottom-border {
   height: 1px;
   width: 100%;

@@ -59,6 +59,7 @@ $(".menu-bars").click(function() {
   $(".nav-line:nth-child(1)").toggleClass("animate-top");
   $(".nav-line:nth-child(2)").toggleClass("animate-middle");
   $(".nav-line:nth-child(3)").toggleClass("animate-bottom");
+  $(".menu-bars").toggleClass("shift");
   $(".wrap").toggleClass("pull");
   $(".wrap").toggleClass("fixed");
   $(".side-nav").toggleClass("push");
@@ -72,6 +73,7 @@ $(window).resize(function() {
     $(".nav-line:nth-child(2)").removeClass("animate-middle");
     $(".nav-line:nth-child(3)").removeClass("animate-bottom");
     $(".wrap").removeClass("pull");
+    $(".menu-bars").removeClass("shift");
     $(".wrap").removeClass("fixed");
     $(".side-nav").removeClass("push");
   }
