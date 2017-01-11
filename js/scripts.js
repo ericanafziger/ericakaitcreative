@@ -55,7 +55,6 @@ $(document).ready(function(){
   });
 
 // =========================Hidden Menu==========================//
-
 $(".menu-bars").click(function() {
   $(".nav-line:nth-child(1)").toggleClass("animate-top");
   $(".nav-line:nth-child(2)").toggleClass("animate-middle");
@@ -64,6 +63,20 @@ $(".menu-bars").click(function() {
   $(".wrap").toggleClass("fixed");
   $(".side-nav").toggleClass("push");
 });
+
+//if window is resized while fly nav is open
+$(window).resize(function() {
+   width = $(window).width();   // returns width of browser viewport
+  if (width > 741) {
+    $(".nav-line:nth-child(1)").removeClass("animate-top");
+    $(".nav-line:nth-child(2)").removeClass("animate-middle");
+    $(".nav-line:nth-child(3)").removeClass("animate-bottom");
+    $(".wrap").removeClass("pull");
+    $(".wrap").removeClass("fixed");
+    $(".side-nav").removeClass("push");
+  }
+});
+
 
 // ================Slideshow Functionality ================//
 

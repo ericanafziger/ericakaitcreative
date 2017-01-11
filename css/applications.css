@@ -130,7 +130,8 @@ body {
       overflow-x: hidden; } }
 
 .fixed {
-  position: fixed; }
+  position: fixed;
+  width: 700px; }
 
 .home-container {
   position: relative;
