@@ -165,7 +165,7 @@ body {
     .wrap {
       overflow-x: hidden; } }
 
-.fixed {
+.fixed-container {
   position: fixed;
   width: 700px; }
 
