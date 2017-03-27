@@ -534,7 +534,7 @@ body {
       .container .hover-text h3 {
         display: none; } }
 
-.image:hover > .hover-text {
+a:hover > .hover-text {
   cursor: pointer;
   opacity: 1; }
 
