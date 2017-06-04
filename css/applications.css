@@ -661,6 +661,9 @@ form {
       margin: 0 auto;
       max-width: 1100px;
       padding: 35px; }
+      .container .content .text h2 {
+        margin-bottom: 0px;
+        padding-bottom: 5px; }
       .container .content .text h4 {
         margin-bottom: 15px; }
       .container .content .text h5 {
