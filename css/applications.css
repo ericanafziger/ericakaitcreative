@@ -785,6 +785,20 @@ form {
         @media screen and (max-width: 740px) {
           .portfolio .content .image-container .image-vertical {
             width: 100%; } }
+  .portfolio .view-full {
+    height: 80px;
+    display: block;
+    width: 99%;
+    background: rgba(130, 130, 130, 0.4);
+    padding: 2.5px 5px;
+    margin: 6px auto;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color ease-in-out 200ms; }
+    .portfolio .view-full:hover {
+      color: #555; }
 
 .section-two {
   height: 100%;
