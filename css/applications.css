@@ -648,9 +648,37 @@ form {
       color: white; }
 
 .container {
-  max-width: 1000px;
-  /*changes max width of images on page*/
   margin: 0 auto; }
+  .container .hero-banner {
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    background: black;
+    position: fixed;
+    transition: height ease-in-out 200ms; }
+    @media screen and (max-width: 1200px) {
+      .container .hero-banner {
+        height: 500px; } }
+    @media screen and (max-width: 540px) {
+      .container .hero-banner {
+        height: 250px; } }
+    .container .hero-banner img {
+      max-height: 100%;
+      min-height: 100%;
+      width: 100%;
+      opacity: 0.7;
+      object-fit: cover;
+      object-position: center;
+      margin: auto; }
+  .container .hero-banner + .content {
+    margin-top: 600px;
+    transition: margin-top ease-in-out 200ms; }
+    @media screen and (max-width: 1200px) {
+      .container .hero-banner + .content {
+        margin-top: 500px; } }
+    @media screen and (max-width: 540px) {
+      .container .hero-banner + .content {
+        margin-top: 250px; } }
   .container .content {
     max-width: 100%;
     top: 0;
@@ -694,22 +722,25 @@ form {
       @media screen and (max-width: 540px) {
         .container .content .prev-next p {
           display: none; } }
-    .container .content .image-container .image-horizontal, .container .content .image-container .image-vertical {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      padding: 2.5px 5px; }
-      .container .content .image-container .image-horizontal img, .container .content .image-container .image-vertical img {
-        max-height: 100%;
-        max-width: 100%;
+    .container .content .image-container {
+      max-width: 1000px;
+      margin: auto; }
+      .container .content .image-container .image-horizontal, .container .content .image-container .image-vertical {
+        position: relative;
         width: 100%;
-        -o-object-fit: cover;
-        object-fit: cover; }
-    .container .content .image-container .image-vertical {
-      width: 50%; }
-      @media screen and (max-width: 740px) {
-        .container .content .image-container .image-vertical {
-          width: 100%; } }
+        height: 100%;
+        padding: 2.5px 5px; }
+        .container .content .image-container .image-horizontal img, .container .content .image-container .image-vertical img {
+          max-height: 100%;
+          max-width: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+          object-fit: cover; }
+      .container .content .image-container .image-vertical {
+        width: 50%; }
+        @media screen and (max-width: 740px) {
+          .container .content .image-container .image-vertical {
+            width: 100%; } }
 
 .portfolio {
   max-width: 1100px;
@@ -1037,7 +1068,7 @@ form {
       display: block; } }
 
 .nav-main {
-  position: absolute;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
