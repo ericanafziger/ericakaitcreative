@@ -431,7 +431,7 @@ body {
         .container .content h4:first-child {
           opacity: 0; } }
       @media screen and (max-width: 740px) {
-        .container .content h4:nth-child(n+2) {
+        .container .content h4.place {
           display: none; } }
     .container .content a {
       text-decoration: none; }

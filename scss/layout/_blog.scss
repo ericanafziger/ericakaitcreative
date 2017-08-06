@@ -28,7 +28,7 @@
           opacity: 0;
         }
       }
-      &:nth-child(n+2) {
+      &.place {
         @media screen and #{$md-break} {
           display: none;
         }
