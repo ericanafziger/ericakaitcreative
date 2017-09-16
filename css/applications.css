@@ -763,6 +763,9 @@ form {
       margin: 0 auto;
       max-width: 1100px;
       padding: 35px; }
+      @media screen and (max-width: 740px) {
+        .portfolio .content .text {
+          padding: 0px; } }
       .portfolio .content .text h4 {
         margin-bottom: 15px;
         opacity: 1;
