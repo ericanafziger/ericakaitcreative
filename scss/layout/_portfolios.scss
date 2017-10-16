@@ -23,6 +23,9 @@
       margin: 0 auto;
       max-width: $max-width;
       padding: 35px;
+      @media screen and #{$md-break} {
+        padding: 0px;
+      }
       h4 {
         margin-bottom: 15px;
         opacity: 1;
@@ -89,6 +92,22 @@
           width: 100%;
         }
       }
+    }
+  }
+  .view-full {
+    height: 80px;
+    display: block;
+    width: 99%;
+    background: $t-grey;
+    padding: 2.5px 5px;
+    margin: 6px auto;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color ease-in-out 200ms;
+    &:hover {
+      color: $grey;
     }
   }
 }
