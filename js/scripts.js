@@ -62,6 +62,7 @@ $(".menu-bars").click(function() {
   $(".menu-bars").toggleClass("shift");
   $(".wrap").toggleClass("pull");
   $(".wrap").toggleClass("fixed-container");
+  $(".nav-main").toggleClass("pushed");
   $(".side-nav").toggleClass("push");
 });
 
@@ -107,7 +108,7 @@ $(window).resize(function() {
 
   startSlideshow();
   $('.left-controll').click(function(){
-    debugger;
+    // debugger;
     stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");

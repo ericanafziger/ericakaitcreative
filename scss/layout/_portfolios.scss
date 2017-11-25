@@ -23,6 +23,9 @@
       margin: 0 auto;
       max-width: $max-width;
       padding: 35px;
+      @media screen and #{$md-break} {
+        padding: 0px;
+      }
       h4 {
         margin-bottom: 15px;
         opacity: 1;

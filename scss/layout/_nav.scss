@@ -1,22 +1,21 @@
 .nav-main {
-  position: absolute;
+  position: fixed;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  left: 0;
   display: flex;
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: $t-white-2;
   height: 60px;
   z-index: 4;
   width: 100%;
   @media screen and #{$md-break} {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    // position: absolute;
+    justify-content: flex-start;
     overflow: hidden;
+  }
+  &.pushed {
+    left: auto !important;
   }
   .title {
     display: none;
@@ -91,6 +90,10 @@
 }
 .bottom-border {
   height: 1px;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+          transform: translate(-50%,0);
   width: 100%;
   background: $t-white-2;
   position: absolute;

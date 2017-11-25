@@ -14,14 +14,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   @media screen and #{$lg-break} {
     width: 90%;
   }
@@ -142,6 +137,8 @@
 .line {
   position: absolute;
   width: 30%;
+  left: 50%;
+  transform: translate(-50%,0);
   top: 51.5%;
   height: 1px;
   background: $grey;
