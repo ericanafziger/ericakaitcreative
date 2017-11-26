@@ -625,13 +625,14 @@ form {
     width: 100%;
     position: sticky;
     top: 60px;
+    overflow: hidden;
     z-index: -5;
-    height: 600px;
+    height: 400px;
     background: black;
     transition: height ease-in-out 200ms; }
     @media screen and (max-width: 1200px) {
       .container .hero-banner {
-        height: 500px; } }
+        height: 400px; } }
     @media screen and (max-width: 540px) {
       .container .hero-banner {
         height: 250px; } }
@@ -645,16 +646,14 @@ form {
       margin: auto; }
   .container .hero-banner + .content {
     transition: margin-top ease-in-out 200ms; }
-    @media screen and (max-width: 1200px) {
-      .container .hero-banner + .content {
-        margin-top: 500px; } }
-    @media screen and (max-width: 540px) {
-      .container .hero-banner + .content {
-        margin-top: 250px; } }
   .container .content {
     max-width: 100%;
     top: 0;
+    margin-top: 30px;
     width: 100%; }
+    @media screen and (max-width: 540px) {
+      .container .content {
+        margin-top: 0px; } }
     .container .content a {
       text-decoration: none; }
     .container .content .text {
