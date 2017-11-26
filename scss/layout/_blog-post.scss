@@ -3,9 +3,12 @@
   .hero-banner {
     margin-top: 60px;
     width: 100%;
+    position: sticky;
+    top: 60px;
+    z-index: -5;
     height: 600px;
     background: $black;
-    position: fixed;
+    // position: fixed;
     transition: height ease-in-out 200ms;
     @media screen and (max-width: 1200px) {
       height: 500px;
@@ -24,7 +27,7 @@
     }
   }
   .hero-banner + .content {
-    margin-top: 600px;
+    // margin-top: 600px;
     transition: margin-top ease-in-out 200ms;
     @media screen and (max-width: 1200px) {
       margin-top: 500px;
