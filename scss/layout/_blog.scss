@@ -5,6 +5,9 @@
    max-width: 1400px;
    padding: 1% 0 1% 0;
    width: 100%;
+   &.blog {
+     margin-top: 90px;
+   }
    @media screen and #{$md-break} {
      padding-top: 0;
    }
