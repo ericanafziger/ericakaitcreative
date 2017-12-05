@@ -156,3 +156,24 @@ a:hover > .hover-text {
   cursor: pointer;
   opacity: 1;
 }
+
+// Pagination Styling
+.pagination span{
+  padding: 5px 10px;
+  color: $grey;
+  margin-left: 5px;
+  border: 1px solid $grey;
+  transition: all ease-in-out 200ms;
+  &.inactive {
+    &:hover {
+      background: $grey;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  &.active {
+    background: $grey;
+    color: $white;
+    text-decoration: none;
+  }
+}
