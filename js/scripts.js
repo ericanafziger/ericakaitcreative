@@ -105,26 +105,10 @@ $(window).resize(function() {
   }, 5000); }
 
   function stopSlideshow() { clearInterval(interval)}
-
   startSlideshow();
-  $('.left-controll').click(function(){
-    // debugger;
-    stopSlideshow();
-    var photoNumber = parseInt($(".images .active").attr('class')); // active photo
-    $(".circles i").removeClass("fa-circle");
-    $(".images img").removeClass("active");
-    if (photoNumber===1) {
-      imageCounter = $(".images").children().length;
-      $(".images img:nth-child("+imageCounter+")").addClass("active");
-    } else {
-      imageCounter -= 1;
-      $(".images img:nth-child("+imageCounter+")").addClass("active");
-    }
-    $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
-    startSlideshow();
-  });
 
-  $('.right-controll').click(function(){
+  //Functions for left and right clicks
+  function clickRight() {
     stopSlideshow();
     var photoNumber = parseInt($(".images .active").attr('class')); // active photo
     $(".circles i").removeClass("fa-circle");
@@ -141,6 +125,43 @@ $(window).resize(function() {
     }
     $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
     startSlideshow();
+  };
+  function clickLeft() {
+    stopSlideshow();
+    var photoNumber = parseInt($(".images .active").attr('class')); // active photo
+    $(".circles i").removeClass("fa-circle");
+    $(".images img").removeClass("active");
+    if (photoNumber===1) {
+      imageCounter = $(".images").children().length;
+      $(".images img:nth-child("+imageCounter+")").addClass("active");
+    } else {
+      imageCounter -= 1;
+      $(".images img:nth-child("+imageCounter+")").addClass("active");
+    }
+    $(".circles i:nth-child("+imageCounter+")").addClass("fa-circle");
+    startSlideshow();
+  };
+
+  // move when arrow keys pressed
+  $("body").keydown(function(e){
+      // left arrow
+      if ((e.keyCode || e.which) == 37)
+      {
+        clickLeft();
+      }
+      // right arrow
+      if ((e.keyCode || e.which) == 39)
+      {
+        clickRight();
+      }
+  });
+
+  // move on button click
+  $('.left-control').click(function(){
+    clickLeft();
+  });
+  $('.right-control').click(function(){
+    clickRight();
   });
   $(".circles i").click(function(){
     stopSlideshow();
