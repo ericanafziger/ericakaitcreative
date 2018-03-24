@@ -511,6 +511,9 @@ a:hover > .hover-text {
   cursor: pointer;
   opacity: 1; }
 
+p.pagination {
+  line-height: 4em; }
+
 .pagination span {
   padding: 5px 10px;
   color: #555;

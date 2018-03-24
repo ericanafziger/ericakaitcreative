@@ -158,6 +158,9 @@ a:hover > .hover-text {
 }
 
 // Pagination Styling
+p.pagination {
+  line-height: 4em;
+}
 .pagination span{
   padding: 5px 10px;
   color: $grey;
