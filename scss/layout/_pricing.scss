@@ -1,8 +1,11 @@
-.portfolio .content .pricing.image-container .image-horizontal {
+.portfolio .content .pricing.main-container .image-horizontal {
   padding: 0px;
   margin-top: 50px;
+  img {
+    max-width: 100%;
+  }
 }
-.pricing.image-container {
+.pricing.main-container {
   hr {
     border: 0.5px solid $t-grey;
     margin: 50px auto;

@@ -1020,70 +1020,72 @@ form {
     transform: rotate(180deg);
     top: -30px; }
 
-.portfolio .content .pricing.image-container .image-horizontal {
+.portfolio .content .pricing.main-container .image-horizontal {
   padding: 0px;
   margin-top: 50px; }
+  .portfolio .content .pricing.main-container .image-horizontal img {
+    max-width: 100%; }
 
-.pricing.image-container hr {
+.pricing.main-container hr {
   border: 0.5px solid rgba(130, 130, 130, 0.4);
   margin: 50px auto;
   width: 100%; }
   @media screen and (max-width: 740px) {
-    .pricing.image-container hr {
+    .pricing.main-container hr {
       margin: 30px auto; } }
-.pricing.image-container .package-text {
+.pricing.main-container .package-text {
   width: 100%; }
   @media screen and (max-width: 950px) {
-    .pricing.image-container .package-text {
+    .pricing.main-container .package-text {
       padding: 0px;
       padding-bottom: 20px;
       width: 100%; } }
-  .pricing.image-container .package-text .packages-container {
+  .pricing.main-container .package-text .packages-container {
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    .pricing.image-container .package-text .packages-container .package {
+    .pricing.main-container .package-text .packages-container .package {
       width: 32%;
       background: white;
       padding: 10px;
       border: 1px solid rgba(130, 130, 130, 0.4); }
       @media screen and (max-width: 950px) {
-        .pricing.image-container .package-text .packages-container .package {
+        .pricing.main-container .package-text .packages-container .package {
           width: 48%;
           margin-top: 10px; } }
       @media screen and (max-width: 740px) {
-        .pricing.image-container .package-text .packages-container .package {
+        .pricing.main-container .package-text .packages-container .package {
           width: 100%; } }
-    .pricing.image-container .package-text .packages-container .package:first-child {
+    .pricing.main-container .package-text .packages-container .package:first-child {
       margin-left: 0px; }
-    .pricing.image-container .package-text .packages-container .package:last-child {
+    .pricing.main-container .package-text .packages-container .package:last-child {
       margin-right: 0px; }
-  .pricing.image-container .package-text #portraits .packages-container .package {
+  .pricing.main-container .package-text #portraits .packages-container .package {
     width: 49%; }
     @media screen and (max-width: 740px) {
-      .pricing.image-container .package-text #portraits .packages-container .package {
+      .pricing.main-container .package-text #portraits .packages-container .package {
         width: 100%; } }
-  .pricing.image-container .package-text h3:first-child {
+  .pricing.main-container .package-text h3:first-child {
     text-align: center; }
-  .pricing.image-container .package-text h3, .pricing.image-container .package-text ul, .pricing.image-container .package-text p {
+  .pricing.main-container .package-text h3, .pricing.main-container .package-text ul, .pricing.main-container .package-text p {
     color: #555;
     text-align: justify; }
-  .pricing.image-container .package-text h3 {
+  .pricing.main-container .package-text h3 {
     color: black;
     padding-top: 10px; }
     @media screen and (max-width: 540px) {
-      .pricing.image-container .package-text h3 {
+      .pricing.main-container .package-text h3 {
         text-align: left; } }
-  .pricing.image-container .package-text p, .pricing.image-container .package-text ul {
+  .pricing.main-container .package-text p, .pricing.main-container .package-text ul {
     padding-top: 12px; }
-  .pricing.image-container .package-text li {
+  .pricing.main-container .package-text li {
     font-size: 0.9em;
     padding: 5px;
     list-style-type: none; }
-    .pricing.image-container .package-text li:nth-child(odd) {
+    .pricing.main-container .package-text li:nth-child(odd) {
       background: rgba(219, 219, 219, 0.4); }
-  .pricing.image-container .package-text .highlight {
+  .pricing.main-container .package-text .highlight {
     color: black;
     font-weight: bold;
     font-size: 1.1em; }
