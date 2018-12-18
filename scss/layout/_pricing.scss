@@ -1,11 +1,61 @@
-.image-container {
+.portfolio .content .pricing.main-container .image-horizontal {
+  padding: 0px;
+  margin-top: 50px;
+  img {
+    max-width: 100%;
+  }
+}
+.pricing.main-container.image-container {
+  hr {
+    border: 0.5px solid $t-grey;
+    margin: 50px auto;
+    width: 100%;
+    @media screen and #{$md-break} {
+      margin: 30px auto;
+    }
+  }
   .package-text {
-    padding: 30px;
-    width: 50%;
+    width: 100%;
     @media screen and #{$lg-break} {
       padding: 0px;
       padding-bottom: 20px;
       width: 100%;
+    }
+    .packages-container {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .package {
+        width: 32%;
+        background: $white;
+        padding: 10px;
+        border: 1px solid $t-grey;
+        @media screen and #{$lg-break} {
+          width: 48%;
+          margin-top: 10px;
+        }
+        @media screen and #{$md-break} {
+          width: 100%;
+        }
+      }
+      .package:first-child {
+        margin-left: 0px;
+      }
+      .package:last-child {
+        margin-right: 0px;
+      }
+    }
+    #portraits {
+      .packages-container {
+        .package {
+          width: 49%;
+          @media screen and #{$md-break} {
+            width: 100%;
+          }
+        }
+      }
     }
     h3:first-child {
       text-align: center;
